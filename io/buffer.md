@@ -50,3 +50,8 @@ console.log(Buffer.alloc(5,'a'));//<Buffer 61 61 61 61 61>
 * Buffer.allocUnsafe(size)，创建指定size大小的buffer，这样方式创建的buffer是底层未初始化的，可能怀有旧数据，最后紧接着使用fill填充。
 
 Buffer在分配是会预分配一个	`Buffer.poolSize`,`Buffer.allocUnsafe(szie).fill`与`Buffer.alloc(size,fill)`的关键区别在于此，如果`size`小于`Buffer.pollSzie一半`前者依旧会使用此内部Buffer池，但是后者则不会使用此内部Buffer池。所以从性能上讲`Buffer.allocUnsafe`优先于`Buffer.alloc`
+
+
+ps:Node Buffer基于TypedArray(Uint8Array)实现
+
+![uint8Array内存分配](https://github.com/luyufa/NodeLearning/blob/master/io/TypedArray.jpeg)

@@ -1,7 +1,7 @@
 ## Node.js Learning
 
 #### IO
-* buffer
+* [buffer](https://github.com/luyufa/NodeLearning/blob/master/io/buffer.md)
 * stream流
 * 标准输入输出流
 * console与日志
