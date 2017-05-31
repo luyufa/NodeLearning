@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/io/buffer.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
-              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+              <caret line="56" column="87" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -229,12 +229,12 @@
       <option name="presentableId" value="Default" />
       <updated>1496233467159</updated>
       <workItem from="1496233468395" duration="4729000" />
-      <workItem from="1496240067200" duration="170000" />
+      <workItem from="1496240067200" duration="279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4899000" />
+    <option name="totallyTimeSpent" value="5008000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,7 +356,7 @@
     <entry file="file://$PROJECT_DIR$/io/buffer.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+          <caret line="56" column="87" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="87" />
           <folding />
         </state>
       </provider>
