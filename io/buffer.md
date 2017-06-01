@@ -16,7 +16,7 @@ Buffer是用于处理`二进制`数据的类，类似于整数`数组`，其长�
 ```
 const buff1 = Buffer.from('abcde');
 ```
- * Buffer.from(buffer),通过buffer复制一个buffer，不贡献内存
+ * Buffer.from(buffer),通过buffer复制一个buffer，不共享内存
 
 ```
 const buff1 = Buffer.from('abc');
