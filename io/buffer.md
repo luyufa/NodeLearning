@@ -54,4 +54,4 @@ Buffer在分配是会预分配一个	`Buffer.poolSize`,`Buffer.allocUnsafe(szie)
 
 ps:Node Buffer基于TypedArray(Uint8Array)实现
 
-![uint8Array内存分配]()
+![uint8Array内存分配](https://github.com/luyufa/NodeLearning/blob/master/io/TypedArray.png)
