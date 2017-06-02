@@ -1,8 +1,8 @@
-##Stream
+## Stream
 
 >A stream is an abstract interface implemented by various objects in Node.js.
 
-#####流是什么?
+##### 流是什么?
 
 `stream`，也就是流，指的是`NodeJS`中的`stream`模块提供的处理流数据的抽象接口。Node中提供了三大类流：`可读流`、`可写流`、`双工流(可读可写)`
 
@@ -16,14 +16,14 @@ const Transform = stream.Transform;
 ```
 而其中具体的流如何产生数据、消耗数据、数据格式需要自己实现
 
-#####为什么使用流?
+##### 为什么使用流?
 考虑这样一个问题，某个需求分析大约500MB的文件，如果直接使用`fs.readFile`，如下
 
 ```
 const fs = require('fs');
 fs.readFile('test.txt', function (err, body) {
     const data = body.toString();
-    // TODO 
+    // TODO
 });
 ```
 如果小文件还勉强凑乎可以，但是文件一旦很大`toString`便会抛出 `Error: toString failed`
@@ -38,16 +38,16 @@ const rs=fs.createReadStream('test.txt');
 rs.pipe(DestinationWriteStream)
 ```
 
-#####pipe
+##### pipe
 熟悉`linux`的朋友可能并不陌生，它有点像管道命令`|`，在Node中的可读流便提供了`pipe`方法，用于连接可写流，即`readable.pipe(writeable)`，把可读的上游和可写的下游连接到一起。
 pipe返回自身即可以链式调用形成`pipeLine`,入`A.pipe(B).pipe(c)`,其中要求A为`可读流`，B为`双工流`，C为`可写流`。
 
-#####Readable
+##### Readable
 >Readable streams are an abstraction for a source from which data is consumed.
 
 `Readable`可读流,作为上游，为下游提供数据
 
-######创建可读流
+###### 创建可读流
 
 创建一类可读流需要继承`Readbale`实现一个`_read`方法，调用`push`产生数据存入`Readbale`缓存，当没有数据时`push(null)`。
 
@@ -67,13 +67,13 @@ class myReadable extends Readable {
 ```
 当需要数据是，可读流会自动调用`_read`方法从底层数据源获取数据。
 
-######end事件
+###### end事件
 因为流是分次向底层请求数据，需要底层告诉是否还有数据，所以当某次`_read`时调用了`push(null)`，就意味着底层没有可取数据了，就把`state.ended`设置为`true`,故而当且仅当 `(!Readable.cache.length && state.ended)`为`true`才会触发`end`事件
 
-######readable事件
+###### readable事件
 如果调用`read`方法返回`null`后说明当前缓存数据不够，此时数据消耗方需要等待新数据从新进入可读流缓冲时再次调用`read`，故而，数据到达时`readable`便是通过发送`readable事件`通知消耗方。
 
-######内部缓存doRead
+###### 内部缓存doRead
 可读流内部维护一个缓存，当数据足够多时`read`调用便不会引起`_read`调用，即此次不需要向底层数据源获取数据，
 
 ```
@@ -83,10 +83,10 @@ if (state.length === 0 || state.length - n < state.highWaterMark) {
 当前缓存区为空或缓存区扣除本次请求数据后剩余值小于阀值
 ```
 
-######总结
+###### 总结
 可读流是获取底层数据的工具，消耗方通过`read`方法调用请求数据，可读流在将缓存中的数据返回并发出`data事件`，如果缓存中数据不足时，调用`_read`方法使用`push`将数据交由可读流处理（缓存或立即输出）。
 
-######流式消耗
+###### 流式消耗
 可读流有两种消耗模式：`暂停模式(paused mode)`、`流动模式(flowing mode)`
 可读流内部有一个区别流模式的对象`readable._readableState.flowing`,它三种可能的状态：`true(流动模式)`，`false(暂停模式)`，`null(出始状态)`
 
@@ -96,7 +96,7 @@ if (state.length === 0 || state.length - n < state.highWaterMark) {
 一般创建流后，监听`data`事件，或者通过`pipe`方法将数据导向另一个可写流，即可进入流动模式开始消耗数据。
 
 
-#####背压反馈机制
+##### 背压反馈机制
 考虑下面的例子：
 
 ```
