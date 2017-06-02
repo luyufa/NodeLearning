@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/io/console.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io/buffer.md" afterPath="$PROJECT_DIR$/io/buffer.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io/code.md" afterPath="$PROJECT_DIR$/io/code.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io/file.md" afterPath="$PROJECT_DIR$/io/file.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io/stream.md" afterPath="$PROJECT_DIR$/io/stream.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.js" afterPath="$PROJECT_DIR$/test.js" />
     </list>
     <ignored path="NodeSkil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+            <state relative-caret-position="280">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,8 +43,8 @@
       <file leaf-file-name="stream.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io/stream.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2559">
-              <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -50,8 +53,28 @@
       <file leaf-file-name="file.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io/file.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3752">
-              <caret line="134" column="3" selection-start-line="134" selection-start-column="3" selection-end-line="134" selection-end-column="3" />
+            <state relative-caret-position="314">
+              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buffer.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/io/buffer.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/io/code.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -62,16 +85,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="19" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -92,14 +105,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/io/code.md" />
-        <option value="$PROJECT_DIR$/io/buffer.md" />
         <option value="$PROJECT_DIR$/io/std.md" />
         <option value="$PROJECT_DIR$/io/stdio.md" />
-        <option value="$PROJECT_DIR$/io/file.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/io/stream.md" />
+        <option value="$PROJECT_DIR$/io/file.md" />
+        <option value="$PROJECT_DIR$/io/buffer.md" />
+        <option value="$PROJECT_DIR$/io/code.md" />
       </list>
     </option>
   </component>
@@ -274,7 +287,7 @@
       <workItem from="1496240067200" duration="485000" />
       <workItem from="1496295728558" duration="4070000" />
       <workItem from="1496319632446" duration="3967000" />
-      <workItem from="1496369260493" duration="5208000" />
+      <workItem from="1496369260493" duration="5562000" />
     </task>
     <task id="LOCAL-00001" summary="typedArray">
       <created>1496299153058</created>
@@ -346,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496375212139</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="stream">
+      <created>1496384979556</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1496384979556</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18459000" />
+    <option name="totallyTimeSpent" value="18813000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,6 +474,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1736">
           <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -461,6 +482,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -476,6 +498,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -491,13 +514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/io/console.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -506,10 +523,43 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io/code.md">
+    <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1624">
-          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+        <state relative-caret-position="532">
+          <caret line="19" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/file.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/stream.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/console.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -523,40 +573,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/io/buffer.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        <state relative-caret-position="342">
+          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io/file.md">
+    <entry file="file://$PROJECT_DIR$/io/code.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3752">
-          <caret line="134" column="3" selection-start-line="134" selection-start-column="3" selection-end-line="134" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="19" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/io/stream.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2559">
-          <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+        <state relative-caret-position="482">
+          <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
           <folding />
         </state>
       </provider>

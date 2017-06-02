@@ -133,3 +133,7 @@ function traversingDirectory(dir) {
 }
 
 ```
+
+参考链接:
+
+* [Node.js文件操作模块fs](https://itbilu.com/nodejs/core/4y-N3wJS.html)

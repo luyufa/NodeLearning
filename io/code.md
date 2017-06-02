@@ -3,7 +3,7 @@
 >
 > Unicode只是一个符号集，它只规定了符号的二进制代码，却没有规定这个二进制代码应该如何存储。UTF-8是Unicode的实现方式之一,UTF-8不是固定字长编码的，而是一种变长的编码方式一个中文 t通常占3个字节，英文一个字节与ASCII相同。
 
-#### [Unicode->UTF8的转换过程](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)
+#### Unicode->UTF8的转换过程
 
 1. 对于单字节的符号，字节的第一位设为0，后面7位为这个符号的unicode码。因此对于英语字母，UTF-8编码和ASCII码是相同的。
 2. 对于n字节的符号（n>1），第一个字节的前n位都设为1，第n+1位设为0，后面字节的前两位一律设为10。剩下的没有提及的二进制位，全部为这个符号的unicode码。
@@ -62,3 +62,8 @@ console.log(decoder.end(Buffer.from([0x36]))); // 6
 当一个 Buffer 实例被写入 StringDecoder 实例时，
 一个内部的 buffer 会被用于确保解码后的字符串不包含任何不完整的多字节字符。
 不完整的多字节字符被保存在 buffer 中，直到下次调用 `stringDecoder.write()` 或直到 `stringDecoder.end() `被调用
+
+
+参考链接:
+
+* [Unicode与UTF8](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)

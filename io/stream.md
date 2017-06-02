@@ -247,3 +247,11 @@ ws._write = function (chunk, enc, next) {
 rs.pipe(ws);
 ```
 必须rs和ws都配置objectMode为true，否则抛出异常。
+
+
+参考链接:
+
+* [stream-handbook](https://github.com/jabez128/stream-handbook)
+* [Node.js Stream - 基础篇](http://fe.meituan.com/stream-basics.html)
+* [Node.js Stream - 进阶篇](http://fe.meituan.com/stream-internals.html)
+* [探究 Node.js 中的 drain 事件](http://taobaofed.org/blog/2015/12/31/nodejs-drain/)
