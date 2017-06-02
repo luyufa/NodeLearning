@@ -1,16 +1,20 @@
-const fs = require('fs');
-const path = require('path');
+const Writable = require('stream').Writable;
+const Readable = require('stream').Readable;
 
-function traversingDirectory(dir) {
-    if (!fs.existsSync(dir)) {
-        return [];
+const rs = new Readable({objectMode: true});
+const ws = new Writable({objectMode: true});
+
+
+rs._read = function () {
+    this.push({"name": "luyufa"});
+    this.push(null);
+};
+ws._write = function (chunk, enc, next) {
+    try {
+        console.log('chunk', chunk)
+    } catch (err) {
+        return next(err);
     }
-    const stat = fs.statSync(dir);
-    if (stat.isFile()) {
-
-    } else if (stat.isDirectory()) {
-
-    } else {
-
-    }
-}
+    return next()
+};
+rs.pipe(ws);

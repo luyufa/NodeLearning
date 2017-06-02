@@ -16,7 +16,7 @@ const Transform = stream.Transform;
 ```
 而其中具体的流如何产生数据、消耗数据、数据格式需要自己实现
 
-##### 为什么使用流?
+#### 为什么使用流?
 考虑这样一个问题，某个需求分析大约500MB的文件，如果直接使用`fs.readFile`，如下
 
 ```
@@ -38,11 +38,11 @@ const rs=fs.createReadStream('test.txt');
 rs.pipe(DestinationWriteStream)
 ```
 
-##### pipe
+#### pipe
 熟悉`linux`的朋友可能并不陌生，它有点像管道命令`|`，在Node中的可读流便提供了`pipe`方法，用于连接可写流，即`readable.pipe(writeable)`，把可读的上游和可写的下游连接到一起。
 pipe返回自身即可以链式调用形成`pipeLine`,入`A.pipe(B).pipe(c)`,其中要求A为`可读流`，B为`双工流`，C为`可写流`。
 
-##### Readable
+### Readable
 >Readable streams are an abstraction for a source from which data is consumed.
 
 `Readable`可读流,作为上游，为下游提供数据
@@ -96,7 +96,55 @@ if (state.length === 0 || state.length - n < state.highWaterMark) {
 一般创建流后，监听`data`事件，或者通过`pipe`方法将数据导向另一个可写流，即可进入流动模式开始消耗数据。
 
 
-##### 背压反馈机制
+### Writable
+
+###### 创建可写流
+
+创建一个可写流需要构造一个`Writable`对象,实现一个`_write(data, enc, next)`方法，调用`next`消耗数据
+
+```
+const Writable = require('stream').Writable;
+
+const ws = new Writable();
+ws._write = function (chunk, enc, next) {
+    console.log('chunk', chunk);
+    next();
+};
+
+ws.write('a');
+ws.write('b');
+ws.write('c');
+ws.end('d');
+
+ws.on('finish',function () {
+   console.log('finish')
+});
+```
+上游调用`write`方法把数据写入可写流内部，`write`方法调用`_write`方法，将`data`消耗，并且调用`next(err)`(可同步也可以异步)告诉流可以开始处理下一个数据。
+
+###### finish事件
+
+写入数据完成可以调用end方法，`end`方法调用后不可在调用`write`方法（抛出异常），`end方法的调用会触发`finish`事件（没有没有调用`end`方法则不会触发`finish`事件）
+
+###### drain事件
+
+构造可写流时可以通过`highWaterMark`指定阀值，若写入数据超过阀值(来不及调用`next`消耗或者阀值过低却一次写入大量数据), 则`write`返回`false`，为了避免读写速率不匹配而造成内存上涨，可以监听`drain`事件（当`drain`触发时已经表明可以继续接受数据了），等待可写流内部缓存被清空再继续写入。
+
+```
+const readStream = fs.createReadStream(filePath);
+readStream.on('data', function(data) {
+    if(!res.write(data)){
+        readStream.pause();
+    }
+});
+
+res.on('drain', function() {
+    readStream.resume();
+});
+```
+
+
+### 背压反馈机制
 考虑下面的例子：
 
 ```
@@ -167,3 +215,35 @@ myReader.pipe(myWriter);
 * Tick5:`read(0)`,从底层获取数据
 * Tick6：`push('D')`,D被加到`readable`缓存中，此时`writable`中有A和B,`readable`中有C和D。`readable`缓存中有2个数据，等于设定的`highWaterMark(2)`，不再从底层读取数据。
 
+
+### objectMode
+
+对于可读流来说，`push(data)`时，`data`只能是`String`或`Buffer`类型，而消耗时`data`事件输出的数据都是`Buffer`类型。对于可写流来说，`write(data)`时，`data`只能是`String`或`Buffer`类型，`_write(data)`调用时传进来的`data`都是`Buffer`类型。
+
+也就是说，流中的数据默认情况下都是`Buffer`类型。产生的数据一放入流中，便转成`Buffer`被消耗；写入的数据在传给底层写逻辑时，也被转成`Buffer`类型。
+
+但每个构造函数都接收一个配置对象，有一个`objectMode`的选项，一旦设置为`true`，就能出现“种瓜得瓜，种豆得豆”的效果。
+
+```
+const Writable = require('stream').Writable;
+const Readable = require('stream').Readable;
+
+const rs = new Readable({objectMode: true});
+const ws = new Writable({objectMode: true});
+
+
+rs._read = function () {
+    this.push({"name": "luyufa"});
+    this.push(null);
+};
+ws._write = function (chunk, enc, next) {
+    try {
+        console.log('chunk', chunk)
+    } catch (err) {
+        return next(err);
+    }
+    return next()
+};
+rs.pipe(ws);
+```
+必须rs和ws都配置objectMode为true，否则抛出异常。
