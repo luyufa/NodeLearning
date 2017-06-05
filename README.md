@@ -22,7 +22,7 @@
 
 * [CommonJS规范的实现](https://github.com/luyufa/NodeLearning/blob/master/module/commonJS.md)
 * [npm](https://github.com/luyufa/NodeLearning/blob/master/module/npm.md)
-* 模块加载机制
+* [模块加载机制](https://github.com/luyufa/NodeLearning/blob/master/module/module.md)
 * 文件热更新
 
 ###### 常见问题
