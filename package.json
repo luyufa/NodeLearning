@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "### IO * [buffer](https://github.com/luyufa/NodeLearning/blob/master/io/buffer.md) * [stream流](https://github.com/luyufa/NodeLearning/blob/master/io/stream.md) * [stdio和console](https://github.com/luyufa/NodeLearning/blob/master/io/stdio.md) * [编码与解码](https://github.com/luyufa/NodeLearning/blob/master/io/code.md) * [文件系统](https://github.com/luyufa/NodeLearning/blob/master/io/file.md)",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luyufa/NodeLearning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luyufa/NodeLearning/issues"
+  },
+  "homepage": "https://github.com/luyufa/NodeLearning#readme"
+}

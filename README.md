@@ -20,14 +20,14 @@
 
 ### Module
 
-* npm
-* CommonJS规范的实现
+* [CommonJS规范的实现](https://github.com/luyufa/NodeLearning/blob/master/module/commonJs.md)
+* [npm](https://github.com/luyufa/NodeLearning/blob/master/module/npm.md)
 * 模块加载机制
 * 文件热更新
 
 ###### 常见问题
 
-a.js 和 b.js 两个文件互相 require 是否会死循环? 双方是否能导出变量? 如何从设计上避免这种问题? [more]
-如果 a.js require 了 b.js, 那么在 b 中定义全局变量 t = 111 能否在 a 中直接打印出来? [more]
-如何在不重启 node 进程的情况下热更新一个 js/json 文件? 这个问题本身是否有问题? [more]
+* a.js 和 b.js 两个文件互相 require 是否会死循环? 双方是否能导出变量? 如何从设计上避免这种问题? [more]
+* 如果 a.js require 了 b.js, 那么在 b 中定义全局变量 t = 111 能否在 a 中直接打印出来? [more]
+* 如何在不重启 node 进程的情况下热更新一个 js/json 文件? 这个问题本身是否有问题? [more]
 
