@@ -91,3 +91,6 @@ setInterval(function () {
     fs.writeFileSync('./test.json','{ "name":"' + Math.random() + '" }')
 }, 5000);
 ```
+
+
+###### 热更新配置最佳实践方案->存数据库?
