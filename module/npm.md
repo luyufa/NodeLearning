@@ -38,10 +38,10 @@
 
 ```
 "scripts": {
-    "build": "node test.js"
+    "build": "node test.json"
   }
 ```
-执行`npm run build` 等同于 `node test.js`
+执行`npm run build` 等同于 `node test.json`
 
 `npm run`不带任何参数可以查看当前所有可以执行的脚步命令
 
