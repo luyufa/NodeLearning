@@ -33,8 +33,14 @@
 
 
 
-### ES6
+### JS
+
+* ES6
+* 闭包
+* 原型 & 继承
+* 作用域 & this
+* 类型判断
 
 ### Async & Event
 
-### Async & Event
+
