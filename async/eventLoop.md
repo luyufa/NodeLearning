@@ -29,3 +29,35 @@
 ![libvu](https://github.com/luyufa/NodeLearning/blob/master/async/libvu.png)
 
 
+#### nextTick、then、setTimeout、setImmediate的区别与事件循环有什么关系？
+
+* `nextTick`:放入当前执行队列末尾
+* `then`:事件队列开始
+* `setTimeout`和`setImmediate`:事件队列尾部
+
+```
+setImmediate(function () {
+    console.log(7)
+});
+setTimeout(function () {
+    console.log(1)
+}, 0);
+process.nextTick(function () {
+    console.log(6)
+    process.nextTick(function () {
+        console.log(8)
+    })
+});
+new Promise(function executor(resolve) {
+    console.log(2);
+    for (var i = 0; i < 10000; i++) {
+        i == 9999 && resolve();
+    }
+    console.log(3);
+}).then(function () {
+    console.log(4);
+});
+console.log(5); 
+```
+执行队列 2 3 5  6 8
+事件队列 4 1(7)
