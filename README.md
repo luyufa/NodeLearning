@@ -44,7 +44,7 @@
 ### Async & Event
 
 * [事件循环](https://github.com/luyufa/NodeLearning/blob/master/async/eventLoop.md)
-* Event
+* [Event](https://github.com/luyufa/NodeLearning/blob/master/async/event.md)
 * 异步决绝方案 - Promise
 * 异步决绝方案 - async
 
