@@ -1,22 +1,11 @@
-setImmediate(function () {
-    console.log(7)
-});
-setTimeout(function () {
-    console.log(1)
-}, 0);
-process.nextTick(function () {
-    console.log(6)
-    process.nextTick(function () {
-        console.log(8)
+const EventEmitter = require('events');
+
+const emitter = new EventEmitter();
+
+emitter.setMaxListeners(9)
+
+for (let i = 0; i < 11; i++) {
+    emitter.on('event', function () {
+
     })
-});
-new Promise(function executor(resolve) {
-    console.log(2);
-    for (var i = 0; i < 10000; i++) {
-        i == 9999 && resolve();
-    }
-    console.log(3);
-}).then(function () {
-    console.log(4);
-});
-console.log(5); 
+}

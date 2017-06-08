@@ -44,4 +44,12 @@
 ### Async & Event
 
 * [事件循环](https://github.com/luyufa/NodeLearning/blob/master/async/eventLoop.md)
+* Event
+* 异步决绝方案 - Promise
+* 异步决绝方案 - async
 
+###### 常见问题
+
+* try catch可以捕获异步代码里的error么?为什么?
+* 什么是雪崩问题?如何解决?
+* 什么是异步?有回调函数就算异步么?
