@@ -176,6 +176,16 @@ somePromise().then(function () {
 
 ```
 
+Promise.resolve实现,返回一个promise
+
+```
+_Promise.resolve = function (value) {// 类方法
+        return new _Promise((resolve, reject)=> {
+            resolve(value);
+        });
+    };
+```
+
 ###### Puzzle #1
 ```
 doSomething().then(function () {
