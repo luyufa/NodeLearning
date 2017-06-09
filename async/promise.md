@@ -80,7 +80,7 @@ What can we do here? There are three things:
         //返回新Promise,Promise的状态一经确定不允许在修改,链式调用
         const self = this;
 
-        //穿透性
+        //穿透性,只接受函数作为参数
         onResolved = typeof onResolved === 'function' ? onResolved : function (value) {
             return value;
         };
@@ -95,12 +95,12 @@ What can we do here? There are three things:
                         try {
                             const value = onResolved(self.getData());
                             if (value instanceof _Promise) {
-                                value.then(resolve, reject);
+                                value.then(resolve, reject);//如果返回值是一个promise则,递归执行下去,直到不返回promise为止。
                             } else {
-                                resolve(value);
+                                resolve(value);//如果返回值是一个同步值或undefined,直接resolve
                             }
                         } catch (err) {
-                            return reject(err);
+                            return reject(err);//如果抛出一个同步错误,直接reject
                         }
                     });
                 });
@@ -121,7 +121,7 @@ What can we do here? There are three things:
                     });
                 });
 
-            case STATUS.pending:
+            case STATUS.pending://因为promise中或许会有异步代码,所以先把用户的回调函数保存下来,等到调用resolve时在执行。
                 return new _Promise((resolve, reject)=> {
                     self.onResolvedCallback.push(()=> {
                         try {
