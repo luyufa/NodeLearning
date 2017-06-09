@@ -158,6 +158,24 @@ What can we do here? There are three things:
 `then`方法，在事件循环开始之前，同步队列执行完成之后，获得执行，仅接受函数作为参数（非函数会被忽略即`穿透性`）,永远返回一个`新promise`。
 
 
+catch就是封装过的then,但用起来却有所差异
+
+```
+somePromise().then(function () {
+  throw new Error('oh noes');
+}).catch(function (err) {
+  // I caught your error! :)
+});
+
+
+somePromise().then(function () {
+  throw new Error('oh noes');
+}, function (err) {
+  // I didn't catch your error! :(//then方法的第一个函数抛出的错误无法捕获
+});
+
+```
+
 ###### Puzzle #1
 ```
 doSomething().then(function () {
