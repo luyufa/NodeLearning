@@ -46,7 +46,7 @@
 * [事件循环](https://github.com/luyufa/NodeLearning/blob/master/async/eventLoop.md)
 * [Event](https://github.com/luyufa/NodeLearning/blob/master/async/event.md)
 * [异步决绝方案 - Promise](https://github.com/luyufa/NodeLearning/blob/master/async/promise.md)
-* 异步决绝方案 - async
+* [异步决绝方案 - async](https://github.com/luyufa/NodeLearning/blob/master/async/async.md)
 
 ###### 常见问题
 
@@ -55,3 +55,5 @@
 * 什么是异步?有回调函数就算异步么?
 * catch与then(null,fn)完全一样么?
 * then方法中加return与不加有何区别?
+* 如何实现异步迭代器顺序执行和并发执行?
+* 自定义异步asyncReduce
