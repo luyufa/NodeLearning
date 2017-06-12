@@ -91,8 +91,19 @@ asyncReduce([1, 2, 3], (results, item, cb)=> {
     setTimeout(function () {
         results.push(item * 2)
         cb();
-    },1000)
+    }, 1000)
 }, function (err, results) {
     console.log('err', err)
     console.log('results', results)
 }, [])
+
+
+function sleep(ms) {
+    const now = Date.now();
+    const expire = now + ms;
+    while (Date.now() < expire) {
+    }
+}
+
+// sleep(10000)
+console.log(1);

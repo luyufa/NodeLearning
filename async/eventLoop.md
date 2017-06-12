@@ -61,3 +61,15 @@ console.log(5); 
 ```
 执行队列 2 3 5  6 8
 事件队列 4 1(7)
+
+
+NodeJS中的异步大致分为两类,IO操作走libvu和setTimeout等方式实现的
+
+```
+function sleep(ms) {
+    const now = Date.now();
+    const expire = now + ms;
+    while (Date.now() < expire) {
+    }
+}
+```
