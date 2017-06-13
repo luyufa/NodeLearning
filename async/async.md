@@ -4,193 +4,200 @@
 
 if any of the tasks pass an error to their own callback, the next function is not executed, and the main callback is immediately called with the erro
 
-1. 顺序执行，并且参数依次传递
+1. `waterfall`
 
  ```
-const async = require('async');
-async.waterfall([
-    (cb)=> {
-        setTimeout(function () {
-            cb(null, 1);
-        }, 1000)
-    },
-    (value, cb)=> {
-        setTimeout(function () {
-            cb(null, value, 2);
-        }, 1000)
+ function asyncWaterfall(tasks, callback) {
+    if (!Array.isArray(tasks)) {
+        callback(`${tasks} must be an array`);
     }
-], (err, v1, v2)=> {
-    console.log(v1, v2);
-});
-//1,2
+
+    (function next(...args) {
+        if (args[0]) {
+            return callback(args[0]);
+        }
+        if (tasks.length) {
+            const fn = tasks.shift();//如果存在任务就去一个出来执行
+            fn.apply(null, Array.prototype.slice.call(args, 1).concat(onlyOnce(next)));//去掉第一个错误参数
+        } else {
+            callback.apply(null, Array.prototype.slice.call(args));
+        }
+    })();
+
+    function onlyOnce(next) {
+        let flag = false;
+        return (...args)=> {//仅允许回调函数执行一次
+            if (flag) {
+                return next(new Error('cb already called'));
+            } else {
+                next.apply(null, args);
+                flag = true;
+            }
+        };
+    }
+}
 ```
 
-2. 顺序执行，不传递参数
+2. `each`
 
   ```
- const async = require('async');
- async.series([
-    (cb)=> {
-        setTimeout(function () {
-            cb(null, 1);
-        }, 1000)
-    },
-    (cb)=> {
-        setTimeout(function () {
-            cb(null, 2);
-        }, 1000)
+function asyncEach(items, iterator, callback) {
+    if (!Array.isArray(items)) {
+        callback(`${items} must be an array`);
     }
-], (err, results)=> {
-    console.log(results);
-});
-//[1,2]
- ```
 
-3. 并发执行
-
- ```
-const async = require('async');
-async.parallel([
-    cb=> {
-        setTimeout(function () {
-            cb(null, 1)
-        }, 1000)
-    }, cb=> {
-        setTimeout(function () {
-            cb(null, 2)
-        }, 1000)
-    },
-
- ], (err, result)=> {
-    console.log(result)
-});
-//[1,2]
-```
-
-4. 循环
-
- ```
- const async = require('async');
-
- let stop = true;
- let count = 0;
- async.whilst(
-    ()=> stop,
-    cb=> {
-        setTimeout(function () {
-            if (count++ === 2) {
-                stop = false
-            }
-            cb(null, count);
-        }, 500)
-    },
-    (err, results)=> {
-        console.log(results);
-    });
-    //3
- ```
-
-5. 对数组元素调用同一方法不管返回值
-
- ```
-//并发
-const async = require('async');
-async.each([1, 2, 3], (item, cb)=> {
-    setTimeout(function () {
-        console.log(item)
-        cb('a',item)
-    }, 500)
-},(err)=>{
-    console.log(err)
-});
-//1 a 2 3
-
-
- //顺序执行
-const async = require('async');
-async.eachSeries([1, 2, 3], (item, cb)=> {
-    setTimeout(function () {
-        console.log(item)
-        cb('a',item)
-    }, 500)
-},(err)=>{
-    console.log(err)
-});
-//1 a
-```
-
-
-####  异步流程自实现
-
-`异步顺序执行迭代器`
-
-```
-function myAsyncIterator(arr, iterator, callback) {
-    if (Object.prototype.toString.call(arr) !== '[object Array]') {
-        return callback({reason: 'params wrong'});
+    if (typeof iterator !== 'function') {
+        return callback(new Error('iterator should be a function!'));
     }
+
     let count = 0;
-    (function iterate() {
-        if (count >= arr.length) {
-            return callback()
-        } else {
-            iterator(arr[count++], function (err) {
-                if (err) {
+    let onlyOnceCallback = false;
+
+    function next(err) {
+        if (err && !onlyOnceCallback) {//callback只接受最先抛出的错误
+            onlyOnceCallback = true;
+            return callback(err);
+        }
+        if ((++count >= items.length) && !onlyOnceCallback) {
+            onlyOnceCallback = true;
+            return callback();
+        }
+    }
+
+    function onlyOnce(fn) {
+        let flag = false;
+        return err=> {
+            if (flag) {
+                throw fn(new Error('cb already called'));
+            } else {
+                fn(err);
+                flag = true;
+            }
+        };
+    }
+
+    items.map(task=>iterator(task, onlyOnce(next)));
+}
+ ```
+
+3. `eachLimit`
+
+ ```
+function asyncEachLimit(items, limit, iterator, callback) {
+    if (!Array.isArray(items)) {
+        return callback(new Error('items should be an array!'));
+    }
+
+    if (typeof iterator != 'function') {
+        return callback(new Error('iterator should be a function!'));
+    }
+
+    let running = 0;
+    let onlyOnceCallback = false;
+
+    (function next() {
+        while (running < limit && !onlyOnceCallback) {
+            let item = items.shift();
+
+            if (!item) {
+                if (running <= 0 && !onlyOnceCallback) {
+                    onlyOnceCallback = true;
+                    return callback();
+                }
+                return;
+            }
+            running++;
+            iterator(item, function (err) {
+                running--;
+                if (err && !onlyOnceCallback) {
+                    onlyOnceCallback = true;
                     return callback(err);
                 } else {
-                    return iterate();
+                    next();
                 }
-            })
+            });
+
+        }
+    })
+    ();
+}
+```
+
+4. `whilst`
+
+ ```
+function asyncWhilst(test, iterator, callback) {
+    if (typeof test != 'function') {
+        return callback(new Error('iterator should be a function!'));
+    }
+    if (typeof iterator != 'function') {
+        return callback(new Error('iterator should be a function!'));
+    }
+
+    (function next() {
+        if (test()) {
+            iterator(function (err) {
+                if (err) {
+                    callback();
+                } else {
+                    next();
+                }
+            });
+        } else {
+            callback();
         }
     })();
 }
-```
 
+ ```
 
-`异步并发执行迭代器`
+5. `asyncRedcue`
 
-```
-function myAsyncPallIterator(arr, iterator, callback) {
+ ```
+ function asyncReduce(items, iterator, callback, results) {
+    (function next() {
+        let item = items.shift();
+        if (!item) {
+            callback(null, results);
+        } else {
+            iterator(item, results, function (err) {
+                if (err) {
+                    callback(err);
+                } else {
+                    next();
+                }
+            });
+        }
+    })();
+}
+ ```
+
+6. `parallel`
+
+ ```
+ function asyncParallel(tasks, callback) {
+
     let count = 0;
-    let finish = 0;
-    while (count < arr.length) {
-        iterator(arr[count++], function (err) {
-            if (err) {
-                callback(err)
+    let results = [];
+    let onlyOnceCallback = false;
+    tasks.map(task=> {
+        task(function (err, ...args) {
+            if (err && !onlyOnceCallback) {
+                onlyOnceCallback = true;
+                return callback(err, results);
             } else {
-                if (finish++ === arr.length) {
-                    callback()
+                count++;
+                results = results.concat(Array.prototype.slice.call(args));
+                if ((count === tasks.length) && !onlyOnceCallback) {
+                    onlyOnceCallback = true;
+                    return callback(null, results);
                 }
             }
-        })
-    }
+        });
+    });
 }
-```
 
-以此基础实现`异步Reduce`
-
-```
-const asyncReduce = function (arr, iterator, callback, results) {
-    myAsyncIterator(arr, function (item, cb) {
-        iterator(results, item, function (err) {
-            if (err) {
-                callback(err)
-            } else {
-                cb()
-            }
-        })
-    }, err=> {
-        if (err) {
-            callback(err)
-        } else {
-            callback(null, results);
-        }
-    })
-};
-```
-
-
-
+ ```
 
 参考链接:
 
