@@ -35,7 +35,7 @@
 
 ### JS
 
-* ES6
+* [ES6](https://github.com/luyufa/NodeLearning/blob/master/js/es6.md)
 * 闭包
 * 原型 & 继承
 * 作用域 & this
