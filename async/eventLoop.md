@@ -73,3 +73,10 @@ function sleep(ms) {
     }
 }
 ```
+
+
+
+参考链接:
+
+* [JavaScript 运行机制详解：再谈Event Loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
+* [异步软实现](https://zhuanlan.zhihu.com/p/25407758)

@@ -94,3 +94,8 @@ setInterval(function () {
 
 
 ###### 热更新配置最佳实践方案->存数据库?
+
+
+参考链接:
+
+* [Node.js 中的循环依赖](https://segmentfault.com/a/1190000004151411)

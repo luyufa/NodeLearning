@@ -243,3 +243,9 @@ doSomething().then(doSomethingElse)
                                      finalHandler(resultOfDoSomethingElse)
                                      |------------------|
 ```
+
+
+参考链接:
+
+* [promise实现](https://github.com/xieranmaya/blog/issues/3)
+* [promise解惑](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)

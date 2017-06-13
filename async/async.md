@@ -188,3 +188,10 @@ const asyncReduce = function (arr, iterator, callback, results) {
     })
 };
 ```
+
+
+
+
+参考链接:
+
+* [Async 模块实现入门浅析](https://zhuanlan.zhihu.com/p/27303127?group_id=857567989694881792)
