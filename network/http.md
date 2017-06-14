@@ -10,3 +10,15 @@
 
 
  ![TCP/IP协议簇数据](https://github.com/luyufa/NodeLearning/blob/master/network/tcp:ip.png)
+
+
+ * http通信过程TCP/IP协议簇发挥的作用
+  1. DNS 解析域名->IP地址
+  2. Http 生成针对web服务器的请求报文
+  3. TCP 把报文分割成段，封装为数据包可靠的传输给目标计算机
+  4. IP 一边中转一边传送
+  5. APR协议寻找MAC地址
+
+
+ `URL`:统一资源定位符（资源地点，URI子集）
+ `ULI`:统一资源标示符（互联网资源）
