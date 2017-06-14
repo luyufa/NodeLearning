@@ -41,12 +41,20 @@
 * 作用域 & this
 * 类型判断
 
+###### 常见问题
+
+* 箭头函数中this指向何处由谁决定?
+
+
+
 ### Async & Event
 
 * [事件循环](https://github.com/luyufa/NodeLearning/blob/master/async/eventLoop.md)
 * [Event](https://github.com/luyufa/NodeLearning/blob/master/async/event.md)
 * [异步决绝方案 - Promise](https://github.com/luyufa/NodeLearning/blob/master/async/promise.md)
 * [异步决绝方案 - async](https://github.com/luyufa/NodeLearning/blob/master/async/async.md)
+* async await
+
 
 ###### 常见问题
 
@@ -59,3 +67,12 @@
 * then方法中加return与不加有何区别?
 * 如何实现异步迭代器顺序执行和并发执行?
 * 自定义异步asyncReduce
+
+
+
+
+### 网络
+
+* http
+* tcp/ip
+* cookie & session

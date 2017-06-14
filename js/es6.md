@@ -127,4 +127,4 @@ paras('err', 1, 2, 3, 4);
 
 7. `calss`类与`extends`继承
  > `class`定义类，必然含有一个`constructor `方法作为构造方法，
- 所有类方法都定义`portotype`上,`this`标示其实例对象，直接使用 `new`关键字创建实例，super继承父类的构造函数...未完待续
+ 所有类方法都定义`portotype`上,`this`标示其实例对象，直接使用 `new`关键字创建实例，super继承父类的构造函数,静态方法不会被继承
