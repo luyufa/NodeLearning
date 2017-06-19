@@ -1,4 +1,4 @@
-##闭包
+## 闭包
 
 ##### 执行环境
 在javscript中执行环境主要分为两种
@@ -40,7 +40,7 @@ console.log(getColor());
  2. getColor之外test.sj文件之内
  3. 全局global，
 
-####闭包
+#### 闭包
 闭包是一个可以访问其他函数内部变量的函数。
 
 * 变量私有化参考Promise实现
