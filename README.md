@@ -36,7 +36,7 @@
 ### JS
 
 * [ES6](https://github.com/luyufa/NodeLearning/blob/master/js/es6.md)
-* 闭包
+* [闭包](https://github.com/luyufa/NodeLearning/blob/master/js/closure.md)
 * 原型 & 继承
 * [作用域 & this](https://github.com/luyufa/NodeLearning/blob/master/js/this.md)
 * 类型判断
