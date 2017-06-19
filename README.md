@@ -38,7 +38,7 @@
 * [ES6](https://github.com/luyufa/NodeLearning/blob/master/js/es6.md)
 * 闭包
 * 原型 & 继承
-* 作用域 & this
+* [作用域 & this](https://github.com/luyufa/NodeLearning/blob/master/js/this.md)
 * 类型判断
 
 ###### 常见问题
