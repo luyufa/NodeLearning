@@ -53,7 +53,7 @@
 * [Event](https://github.com/luyufa/NodeLearning/blob/master/async/event.md)
 * [异步决绝方案 - Promise](https://github.com/luyufa/NodeLearning/blob/master/async/promise.md)
 * [异步决绝方案 - async](https://github.com/luyufa/NodeLearning/blob/master/async/async.md)
-* async await
+* [异步决绝方案 - async await初体验](https://github.com/luyufa/NodeLearning/blob/master/async/async-await.md)
 
 
 ###### 常见问题
