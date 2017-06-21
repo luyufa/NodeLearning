@@ -41,7 +41,11 @@
     "build": "node test.json"
   }
 ```
-执行`npm run build` 等同于 `node test.json`
+执行`npm run build` 等同于 `node test.json`，如需要执行时传递参数通过`--`分割
+
+```
+npm run build -- para1 para2
+```
 
 `npm run`不带任何参数可以查看当前所有可以执行的脚步命令
 

@@ -81,6 +81,10 @@
 
 ### Test
 
+* [mimimist+assert+mocha+supertest](https://github.com/luyufa/NodeLearning/blob/master/test/test.md)
+
+
+
 ### Mongodb
 
 ### Linux及Shell编程入门
