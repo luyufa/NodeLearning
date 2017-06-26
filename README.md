@@ -90,6 +90,7 @@
 ### Linux及Shell编程入门
 
 * [File Permission](https://github.com/luyufa/NodeLearning/blob/master/linux/filePermission.md)
+* [File Manage](https://github.com/luyufa/NodeLearning/blob/master/linux/fileManage.md)
 
 
 ### 算法与数据结构
