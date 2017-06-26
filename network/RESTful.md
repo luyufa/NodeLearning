@@ -1,4 +1,4 @@
-## Resultul API
+## RESTful API
 > 把url当作资源,通过method(`GET` `POST` `DELETE` `PUT`)对资源做不同的动作。
 
 

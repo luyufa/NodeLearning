@@ -74,7 +74,7 @@
 ### 网络
 
 * [http](https://github.com/luyufa/NodeLearning/blob/master/network/http.md)
-* [ResultFul API](https://github.com/luyufa/NodeLearning/blob/master/network/http.md)
+* [RESTful API](https://github.com/luyufa/NodeLearning/blob/master/network/RESTful.md)
 * tcp/ip
 * cookie & session
 
