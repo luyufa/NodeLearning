@@ -49,7 +49,7 @@
 * == 和 === 和[]==[]?
 * javascript引用传递和值传递,如何实现一个json拷贝函数?
 * var let const区别?
-
+* apply, call和bind有什么区别?
 
 
 ### Async & Event
