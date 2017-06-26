@@ -39,7 +39,7 @@
 * [闭包](https://github.com/luyufa/NodeLearning/blob/master/js/closure.md)
 * 原型 & 继承
 * [作用域 & this](https://github.com/luyufa/NodeLearning/blob/master/js/this.md)
-* 类型判断
+* [类型判断](https://github.com/luyufa/NodeLearning/blob/master/js/typeof.md)
 
 ###### 常见问题
 
