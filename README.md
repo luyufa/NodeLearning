@@ -101,6 +101,9 @@
 
 ### 算法与数据结构
 
+* [选择排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/selectSort.md)
+* [插入排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/insertSort.md)
+* [冒泡排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/bubbleSort.md)
 
 ### css
 
