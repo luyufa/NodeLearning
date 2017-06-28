@@ -1,3 +1,13 @@
+## 快速排序
+> 挖坑填数，分而治之
+
+
+* 时间最优 选取合适的key，使得左右数组均分  O(nlogn)
+* 时间最坏 选择数组中最大或最小值，使得数组全分到一个序列了
+* 空间`O(1)`
+
+
+```
 function quickSort(arr) {
     (function quick(arr, low, high) {
         if (low < high) {//递归出口
@@ -29,4 +39,4 @@ function quickSort(arr) {
     })(arr, 0, arr.length - 1);
     return arr;
 }
-console.log(quickSort([3, 5, 4, 1, 2]));
+```

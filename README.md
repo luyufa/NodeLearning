@@ -104,6 +104,7 @@
 * [选择排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/selectSort.md)
 * [插入排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/insertSort.md)
 * [冒泡排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/bubbleSort.md)
+* [快速排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/quickSort.md)
 
 ### css
 
