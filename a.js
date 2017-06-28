@@ -1,32 +1,44 @@
-function quickSort(arr) {
-    (function quick(arr, low, high) {
-        if (low < high) {//递归出口
-            let key = arr[low];
-            let left = low;
-            let right = high;
+function mergeArr(arr, left, mid, right, arr3) {
+    let i = left, j = mid + 1;
 
-            while (left < right) {
-                //寻找key值左边
-                while (arr[right] > key && left < right) {
-                    right--;
-                }
-                arr[left] = arr[right];
-
-                //寻找key值右边
-                while (arr[left] < key && left < right) {
-                    left++
-                }
-                arr[right] = arr[left];
-            }
-
-            //left,right最终会回到一个下标,此值为key
-            arr[left] = key;
-
-            //递归以key为界,左右数组
-            quick(arr, low, left - 1);
-            quick(arr, left + 1, high)
+    while (i <= mid && j <= right) {
+        if (arr[i] < arr[j]) {
+            arr3.push(arr[i++])
+        } else {
+            arr3.push(arr[j++])
         }
-    })(arr, 0, arr.length - 1);
-    return arr;
+    }
+
+    while (j <= right) {
+        arr3.push(arr[j++])
+    }
+    while (i <= mid) {
+        arr3.push(arr[i++])
+    }
+
+    for (let g = 0; g < arr3.length; g++) {
+        arr[g] = arr3[g]
+    }
+    return arr3;
 }
-console.log(quickSort([3, 5, 4, 1, 2]));
+// const a=[1, 3, 5, 2, 4, 8]
+// mergeArr(a, 0, 2, 5, [])
+// console.log(a)
+
+function mergeSort(arr) {
+    let newArr = [];
+
+    function merge(arr, left, right, temp) {
+        console.log(arr, left, right, temp)
+        if (left < right) {
+            let mid = parseInt((left + right) / 2);
+            merge(arr, left, mid, temp);
+            merge(arr, mid + 1, right, temp);
+            mergeArr(arr, left, mid, right, temp)
+        }
+    }
+
+    merge(arr, 0, arr.length - 1, newArr)
+    return newArr;
+}
+console.log(mergeSort([3, 5, 4, 2]))
