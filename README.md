@@ -106,6 +106,7 @@
 * [冒泡排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/bubbleSort.md)
 * [快速排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/quickSort.md)
 * [归并排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mergeSort.md)
+* [二分搜索](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binarySearch.md)
 
 ### css
 
