@@ -90,3 +90,16 @@ TOS.out1();//this.x -> undefined
 TOS.out2();//this.x -> out
 TOS.out3();//this.x -> self
  ```
+
+
+
+//bind 实现
+
+```
+Object.prototype._bind = function (context) {
+    const self = this;
+    return function (...ret) {
+        self.apply(context, ret);
+    };
+};
+```
