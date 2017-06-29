@@ -39,8 +39,8 @@
       <file leaf-file-name="this.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/this.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="103" column="2" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
+            <state relative-caret-position="457">
+              <caret line="104" column="3" selection-start-line="104" selection-start-column="3" selection-end-line="104" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -363,7 +363,7 @@
       <workItem from="1498564901684" duration="3750000" />
       <workItem from="1498649972202" duration="7337000" />
       <workItem from="1498657937979" duration="350000" />
-      <workItem from="1498737307225" duration="2343000" />
+      <workItem from="1498737307225" duration="2430000" />
     </task>
     <task id="LOCAL-00001" summary="typedArray">
       <created>1496299153058</created>
@@ -687,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498740325752</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="bind">
+      <created>1498740522551</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1498740522551</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64952000" />
+    <option name="totallyTimeSpent" value="65039000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -709,7 +716,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1987315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30120483" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34819278" sideWeight="0.5567301" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34819278" sideWeight="0.4432699" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34819278" sideWeight="0.4432699" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3120482" sideWeight="0.46370682" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38433734" sideWeight="0.534179" order="7" side_tool="false" content_ui="tabs" />
@@ -779,7 +786,8 @@
     <MESSAGE value="algorithm" />
     <MESSAGE value="quickSort" />
     <MESSAGE value="binarySearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="binarySearch" />
+    <MESSAGE value="bind" />
+    <option name="LAST_COMMIT_MESSAGE" value="bind" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1127,8 +1135,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/this.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="103" column="2" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
+        <state relative-caret-position="457">
+          <caret line="104" column="3" selection-start-line="104" selection-start-column="3" selection-end-line="104" selection-end-column="3" />
           <folding />
         </state>
       </provider>
