@@ -4,7 +4,7 @@
 
 ##### 流是什么?
 
-`stream`，也就是流，指的是`NodeJS`中的`stream`模块提供的处理流数据的抽象接口。Node中提供了三大类流：`可读流`、`可写流`、`双工流(可读可写)`
+`stream`，也就是流，指的是`NodeJS`中的`stream`模块提供的处理流数据的抽象接口(http req res、stdout/in/error)。Node中提供了三大类流：`可读流`、`可写流`、`双工流(可读可写)`
 
 ```
 const stream = require('stream');
