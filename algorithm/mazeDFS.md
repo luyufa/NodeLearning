@@ -1,3 +1,25 @@
+## 深度优先搜索(走迷宫最短路径)
+>每次都在访问完当前结点后首先访问当前结点的第一个邻接结点。
+
+1. 访问初始结点V,标记已访问
+2. 初始V结点入队栈
+3. 当栈非空时,继续执行,否则算法结束
+4. 出栈一个元素U
+5. 查找U结点的第一个邻接结点,如果未被访问则,依次入栈
+6. 转到步骤3
+
+
+### 举个栗子该图的深度优先搜索结果为`1->2->4->8->5->3->6->7 `
+![深度优先](https://github.com/luyufa/NodeLearning/blob/master/algorithm/dfs)
+
+
+
+* `prev`:纪录每个结点的前置结点，用于逆向推倒路径
+* `count`:当前结点由起始结点走了几步，用于正向计步
+* `is_used`:已经使用过的结点不能在使用
+
+
+```
 class Node {
     constructor(x, y, is_pass) {
         this.x = x;
@@ -39,8 +61,9 @@ class Node {
 }
 
 const maze = Node.buildMaze(6, 6, new Node(1, 0), new Node(0, 4), new Node(3, 1), new Node(2, 2), new Node(4, 2), new Node(1, 3), new Node(4, 3), new Node(2, 4));
+```
 
-
+```
 function goToMazeDFS(maze, origin, target) {
     const stack = [origin];
     const results = [];
@@ -103,3 +126,4 @@ function goToMazeDFS(maze, origin, target) {
 
 
 console.log(goToMazeDFS(maze, Node.getNodeInMaze(maze, 0, 0), Node.getNodeInMaze(maze, 5, 5)));
+```

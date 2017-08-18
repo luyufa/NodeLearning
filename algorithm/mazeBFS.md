@@ -68,7 +68,7 @@ class Node {
 
 const maze = Node.buildMaze(6, 6, new Node(1, 0), new Node(0, 4), new Node(3, 1), new Node(2, 2), new Node(4, 2), new Node(1, 3), new Node(4, 3), new Node(2, 4));
 
-function goToMaze(maze, origin, target) {
+function goToMazeBFS(maze, origin, target) {
     const queue = [origin];
     const results = [];
     while (queue.length) {
@@ -126,6 +126,6 @@ function goToMaze(maze, origin, target) {
 }
 
 
-console.log(goToMaze(maze, Node.getNodeInMaze(maze, 0, 0), Node.getNodeInMaze(maze, 5, 5)));
+console.log(goToMazeBFS(maze, Node.getNodeInMaze(maze, 0, 0), Node.getNodeInMaze(maze, 5, 5)));
 
 ```
