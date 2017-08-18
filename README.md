@@ -108,12 +108,13 @@
 * [快速排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/quickSort.md)
 * [归并排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mergeSort.md)
 * [二分搜索](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binarySearch.md)
+* [走迷宫最短路径](https://github.com/luyufa/NodeLearning/blob/master/algorithm/maze.md)
 
 
 
 ### 进程
 
-* [child_process](https://github.com/luyufa/NodeLearning/blob/master/process/child_process.md)
+* [Node child_process](https://github.com/luyufa/NodeLearning/blob/master/process/node_child_process.md)
 
 
 ### css
