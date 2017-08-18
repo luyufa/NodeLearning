@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algorithm/guanduyouxian.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm/maze.md" afterPath="$PROJECT_DIR$/algorithm/maze.md" />
     </list>
@@ -40,8 +39,8 @@
       <file leaf-file-name="maze.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/algorithm/maze.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="336">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -343,14 +342,7 @@
       <workItem from="1502718082142" duration="478000" />
       <workItem from="1502867951252" duration="2642000" />
       <workItem from="1502873188011" duration="904000" />
-      <workItem from="1503027586514" duration="7086000" />
-    </task>
-    <task id="LOCAL-00005" summary="buffer 8kb">
-      <created>1496313648641</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1496313648641</updated>
+      <workItem from="1503027586514" duration="7157000" />
     </task>
     <task id="LOCAL-00006" summary="buffer 8kb">
       <created>1496313770743</created>
@@ -688,11 +680,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503039811017</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="maze">
+      <created>1503040495702</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1503040495702</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76711000" />
+    <option name="totallyTimeSpent" value="76782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1136,8 +1135,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/maze.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="336">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding />
         </state>
       </provider>

@@ -9,8 +9,8 @@
 6. 转到步骤3
 
 
-### 举个栗子
-![1->2->3->4->5->6->7->8](https://github.com/luyufa/NodeLearning/blob/master/algorithm/guanduyouxian.png)
+### 举个栗子该图的广度优先搜索结果为`1->2->3->4->5->6->7->8`
+![广度优先](https://github.com/luyufa/NodeLearning/blob/master/algorithm/guanduyouxian.png)
 
 
 
