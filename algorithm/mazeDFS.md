@@ -10,7 +10,7 @@
 
 
 ### 举个栗子该图的深度优先搜索结果为`1->2->4->8->5->3->6->7 `
-![深度优先](https://github.com/luyufa/NodeLearning/blob/master/algorithm/dfs)
+![深度优先](https://github.com/luyufa/NodeLearning/blob/master/algorithm/dfs.png)
 
 
 
