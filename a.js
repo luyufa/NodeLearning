@@ -42,9 +42,10 @@ const maze = Node.buildMaze(6, 6, new Node(1, 0), new Node(0, 4), new Node(3, 1)
 
 function goToMaze(maze, origin, target) {
     const queue = [origin];
-
+    const results = [];
     while (queue.length) {
         const current = queue.shift();
+        results.push(current);
         current.is_used = 1;
         if (current.isEqual(target)) {
             break;
@@ -57,26 +58,44 @@ function goToMaze(maze, origin, target) {
             if (top.is_pass && !top.is_used) {
                 top.count = 1 + current.count;
                 top.is_used = 1;
+                top.prev = {x: current.x, y: current.y};
                 queue.push(top);
             }
             if (bottom.is_pass && !bottom.is_used) {
                 bottom.count = 1 + current.count;
                 bottom.is_used = 1;
+                bottom.prev = {x: current.x, y: current.y};
                 queue.push(bottom);
             }
             if (left.is_pass && !left.is_used) {
                 left.count = 1 + current.count;
                 left.is_used = 1;
+                left.prev = {x: current.x, y: current.y};
                 queue.push(left);
             }
             if (right.is_pass && !right.is_used) {
                 right.count = 1 + current.count;
                 right.is_used = 1;
+                right.prev = {x: current.x, y: current.y};
                 queue.push(right);
             }
         }
     }
-    return queue.length > 0 ? queue[0].count : 0;
+    const finish = [];
+    for (let i = results.length - 1; i > 0; i--) {
+        if (finish.length === 0) {
+            finish.unshift(Node.getNodeInMaze(results, target.x, target.y))
+        } else {
+            const prevNode = Node.getNodeInMaze(results, finish[0].prev && finish[0].prev.x, finish[0].prev && finish[0].prev.y)
+            finish.unshift(prevNode);
+            if (origin.isEqual(prevNode)) {
+                break;
+            }
+        }
+    }
+    const count = finish[finish.length - 1].count;
+    return {finish, count};
 }
+
 
 console.log(goToMaze(maze, Node.getNodeInMaze(maze, 0, 0), Node.getNodeInMaze(maze, 5, 5)));

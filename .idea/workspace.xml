@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algorithm/maze.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/process/os_process.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/process/child_process.md" afterPath="$PROJECT_DIR$/process/node_child_process.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a.js" afterPath="$PROJECT_DIR$/a.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm/maze.md" afterPath="$PROJECT_DIR$/algorithm/maze.md" />
     </list>
     <ignored path="NodeSkil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="a.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="8" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="maze.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithm/maze.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="3276">
+              <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -44,17 +51,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="110" column="81" selection-start-line="110" selection-start-column="81" selection-end-line="110" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+              <caret line="110" column="75" selection-start-line="110" selection-start-column="75" selection-end-line="110" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -115,8 +112,9 @@
         <option value="$PROJECT_DIR$/js/this.md" />
         <option value="$PROJECT_DIR$/async/callback-hell.md" />
         <option value="$PROJECT_DIR$/process/child_process.md" />
-        <option value="$PROJECT_DIR$/a.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/a.js" />
+        <option value="$PROJECT_DIR$/algorithm/maze.md" />
       </list>
     </option>
   </component>
@@ -330,14 +328,7 @@
       <workItem from="1502718082142" duration="478000" />
       <workItem from="1502867951252" duration="2642000" />
       <workItem from="1502873188011" duration="904000" />
-      <workItem from="1503027586514" duration="147000" />
-    </task>
-    <task id="LOCAL-00002" summary="typedArray">
-      <created>1496299232845</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1496299232845</updated>
+      <workItem from="1503027586514" duration="6284000" />
     </task>
     <task id="LOCAL-00003" summary="buffer 8kb">
       <created>1496301294027</created>
@@ -675,11 +666,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502718663524</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="maze">
+      <created>1503027738356</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1503027738357</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69772000" />
+    <option name="totallyTimeSpent" value="75909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -696,9 +694,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1987315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30120483" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3180723" sideWeight="0.5680056" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3180723" sideWeight="0.43199435" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3120482" sideWeight="0.4496124" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23373494" sideWeight="0.4031008" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23373494" sideWeight="0.5968992" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33614457" sideWeight="0.44679353" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38433734" sideWeight="0.5257223" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -772,7 +770,8 @@
     <MESSAGE value="bind" />
     <MESSAGE value="地狱回调" />
     <MESSAGE value="进程" />
-    <option name="LAST_COMMIT_MESSAGE" value="进程" />
+    <MESSAGE value="maze" />
+    <option name="LAST_COMMIT_MESSAGE" value="maze" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1105,16 +1104,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/a.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        <state relative-caret-position="224">
+          <caret line="8" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/maze.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="3276">
+          <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1122,7 +1121,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="110" column="81" selection-start-line="110" selection-start-column="81" selection-end-line="110" selection-end-column="81" />
+          <caret line="110" column="75" selection-start-line="110" selection-start-column="75" selection-end-line="110" selection-end-column="75" />
           <folding />
         </state>
       </provider>
