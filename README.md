@@ -108,7 +108,7 @@
 * [快速排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/quickSort.md)
 * [归并排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mergeSort.md)
 * [二分搜索](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binarySearch.md)
-* [走迷宫最短路径](https://github.com/luyufa/NodeLearning/blob/master/algorithm/maze.md)
+* [广度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/maze.md)
 
 
 
