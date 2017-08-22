@@ -110,7 +110,7 @@
 * [二分搜索](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binarySearch.md)
 * [广度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeBFS.md)
 * [深度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeDFS.md)
-* [深度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binaryTree.md)
+* [二叉树遍历](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binaryTree.md)
 
 
 
