@@ -1,3 +1,10 @@
+## 二叉树的前序、中序、后序遍历
+
+* 前序:根左右
+* 中序:左根右
+* 前序:左右根
+
+```
 class Node {
     constructor(value, left, right) {
         this.left = left;
@@ -58,3 +65,4 @@ function LRD(root) {
         console.log(root.value);
     }
 }
+```
