@@ -94,6 +94,12 @@
 
 ### Mongodb
 
+
+### Redis
+
+* [redis的五种数据结构](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
+
+
 ### Linux及Shell编程入门
 
 * [File Permission](https://github.com/luyufa/NodeLearning/blob/master/linux/filePermission.md)

@@ -1,60 +1,40 @@
-class Node {
-    constructor(value, left, right) {
-        this.left = left;
-        this.right = right;
-        this.value = value;
-    }
-}
-
-const c = new Node('c', null);
-const a = new Node('a', c, null);
-const b = new Node('b', null, null);
-const root = new Node('root', a, b);
-
-function DLR(root) {
-    if (root) {
-        console.log(root.value);
-        DLR(root.left);
-        DLR(root.right);
-    }
-}
-function DLR_(root) {
-    const stack = [];
-    while (root || stack.length) {
-        while (root) {
-            console.log(root.value);
-            stack.push(root);
-            root = root.left;
+function binarySearch(arr, target) {
+    let low = 0;
+    let high = arr.length - 1;
+    while (low <= high) {
+        let mid = parseInt((high + low) / 2);
+        console.log(low, high, mid);
+        if (arr[mid] === target) {
+            return mid;
         }
-        root = stack.pop();
-        root = root.right;
-    }
-}
-
-function LDR(root) {
-    if (root) {
-        LDR(root.left);
-        console.log(root.value);
-        LDR(root.right);
-    }
-}
-function LDR_(root) {
-    const stack = [];
-    while (root || stack.length) {
-        while (root) {
-            stack.push(root);
-            root = root.left;
+        else if (arr[mid] < target) {
+            low = mid + 1;
         }
-        root = stack.pop();
-        console.log(root.value);
-        root = root.right;
+        else if (arr[mid] > target) {
+            high = mid - 1;
+        }
     }
+    return -1;
 }
 
-function LRD(root) {
-    if (root) {
-        LRD(root.left);
-        LRD(root.right);
-        console.log(root.value);
-    }
+function _binarySearch(arr, target) {
+    return (function search(arr, low, high) {
+        let mid = parseInt((low + high) / 2);
+        if (low < high) {
+            if (arr[mid] === target) {
+                return mid;
+            }
+            else if (arr[mid] < target) {
+                return search(arr, mid + 1, high);
+            }
+            else if (arr[mid] > target) {
+                return search(arr, low, mid - 1);
+            }
+        }
+        else {
+            return -1;
+        }
+    })(arr, 0, arr.length);
 }
+
+console.log(_binarySearch([1, 2, 3, 4, 5, 6, 7, 8], 3));//3
