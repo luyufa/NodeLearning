@@ -30,7 +30,7 @@
  12. `HLEN key` 获取字段数量
 
 #### List列表
-> key [] 使用双向链表实现，不支持多级嵌套，即value只能是字符串
+> key [] 使用双向链表实现，不支持多级嵌套，即value只能是字符串,有序，不唯一
 
 1. `LPUSH key value [value ...]` 从左边添加元素
 2. `RPUSH key value [value ...]` 从右边添加元素
@@ -45,3 +45,29 @@
 11. `LSET key index value` 为索引为index的元素赋值value
 12. `LTRIM key start end` 删除索引范围外的元素
 
+
+#### Set集合类型
+> key [] 不支持多级嵌套，即value只能是字符串,无序，唯一
+
+1. `SADD key value [value ...]` 向集合中添加一个元素，若已存在则忽略
+2. `SREM key value [value ...]` 移出集合中元素
+3. `SMBMBERS key` 集合中所有元素
+4. `SISMEMBER key value` value是否在集合中
+5. `SDIFF key [key ....]` 集合差运算
+6. `SINTER key [key ...]` 集合交集元素
+7. `SUNION key [key ...]` 集合并集运算
+8. `SRANDMEMBER key [count]` 随机返回count个元素
+9. `SPOP key` 随机弹出一个元素
+
+#### ZSet有序集合
+> key [] 不支持多级嵌套，即value只能是字符串,有序，唯一
+
+1. ZADD key score value [score value ....] 添加一个带分数的元素
+2. ZSCORE key value 获取value的分数
+3. ZRANGEBYSCORE key min max 获取分数在min～max范围内元素
+4. ZRANGE key start end 获取索引在start～end范围内元素按分数升序排序
+5. ZINCRBY key increment value 为value增加increment分数
+6. ZCARD key 获取集合中元素数量
+7. ZCOUNT key min max 指定分数范围内的元素
+8. ZREM key value [value ...] 删除元素
+9. ZREMRANGEBYSCORE key min max 删除分数在min～max范围内的元素
