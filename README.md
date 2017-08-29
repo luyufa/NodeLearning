@@ -98,6 +98,7 @@
 ### Redis
 
 * [redis的五种数据结构](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
+* [redis的事务](https://github.com/luyufa/NodeLearning/blob/master/redis/transaction.md)
 
 
 ### Linux及Shell编程入门
