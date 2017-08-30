@@ -100,6 +100,7 @@
 * [redis的五种数据结构](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
 * [redis的事务](https://github.com/luyufa/NodeLearning/blob/master/redis/transaction.md)
 * [键的生存时间](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
+* [任务队列的两种实现方式](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
 
 
 ### Linux及Shell编程入门
