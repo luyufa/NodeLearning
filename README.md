@@ -128,6 +128,14 @@
 
 * [Node child_process](https://github.com/luyufa/NodeLearning/blob/master/process/node_child_process.md)
 
+### Angular
+* [作用域与事件](https://github.com/luyufa/NodeLearning/blob/master/angular/scope.md)
+
+###### 常见问题
+
+* 夸作用域中常见的通讯方式有那些?
+
+
 
 ### css
 

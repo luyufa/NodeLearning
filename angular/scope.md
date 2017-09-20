@@ -188,3 +188,7 @@ EventBus.fire({
 });
 
 ```
+
+参考链接:
+
+* [AngularJS实例教程（二）——作用域与事件 #18](https://github.com/xufei/blog/issues/18)

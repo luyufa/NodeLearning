@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/scope.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/scope.md" afterPath="$PROJECT_DIR$/angular/scope.md" />
     </list>
     <ignored path="NodeSkil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="83" column="77" selection-start-line="83" selection-start-column="77" selection-end-line="83" selection-end-column="77" />
+            <state relative-caret-position="378">
+              <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -39,18 +39,8 @@
       <file leaf-file-name="scope.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular/scope.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4144">
-              <caret line="185" column="3" selection-start-line="185" selection-start-column="3" selection-end-line="185" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cors.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/cors.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2016">
-              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+            <state relative-caret-position="350">
+              <caret line="191" column="71" selection-start-line="191" selection-start-column="71" selection-end-line="191" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -188,6 +178,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="async" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="angular" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -214,11 +218,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/angular" />
       <recent name="$PROJECT_DIR$/algorithm" />
       <recent name="$PROJECT_DIR$/linux" />
       <recent name="$PROJECT_DIR$/network" />
       <recent name="$PROJECT_DIR$/async" />
-      <recent name="$PROJECT_DIR$/io" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.a.js">
@@ -342,7 +346,7 @@
       <workItem from="1503920193006" duration="816000" />
       <workItem from="1503972766040" duration="2427000" />
       <workItem from="1505101610858" duration="478000" />
-      <workItem from="1505910780190" duration="45000" />
+      <workItem from="1505910780190" duration="339000" />
     </task>
     <task id="LOCAL-00013" summary="readme">
       <created>1496394891739</created>
@@ -691,7 +695,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91410000" />
+    <option name="totallyTimeSpent" value="91704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,20 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/event.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/eventLoop.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1121,18 +1111,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/async/eventLoop.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="83" column="77" selection-start-line="83" selection-start-column="77" selection-end-line="83" selection-end-column="77" />
+        <state relative-caret-position="378">
+          <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/event.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular/scope.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4144">
-          <caret line="185" column="3" selection-start-line="185" selection-start-column="3" selection-end-line="185" selection-end-column="3" />
+        <state relative-caret-position="350">
+          <caret line="191" column="71" selection-start-line="191" selection-start-column="71" selection-end-line="191" selection-end-column="71" />
           <folding />
         </state>
       </provider>
