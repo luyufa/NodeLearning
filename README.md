@@ -136,10 +136,9 @@
 * 夸作用域中常见的通讯方式有那些?
 
 
-
 ### css
 
 ### html
 
-
+* [BOM](https://github.com/luyufa/NodeLearning/blob/master/html/bom.md)
 
