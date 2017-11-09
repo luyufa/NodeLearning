@@ -103,3 +103,31 @@ Object.prototype._bind = function (context) {
     };
 };
 ```
+
+
+7. json深拷贝
+
+```
+function copy(o) {
+    if (Object.prototype.toString.call(o) === '[object Array]') {
+
+        return o.map(item => copy(item));
+
+    } else if (Object.prototype.toString.call(o) === '[object Object]') {
+
+        return Object.keys(o).reduce((result, key) => {
+            result[key] = copy(o[key]);
+            return result;
+        }, {})
+
+    }
+    else {
+        return o;
+    }
+}
+
+
+function copy(o) {
+    return JSON.parse(JSON.stringify(o));
+}
+```

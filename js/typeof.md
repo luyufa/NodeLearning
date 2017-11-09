@@ -58,3 +58,15 @@ function isEmpty(value) {
 }
 
 ```
+
+```
+function buildType() {
+    const types = 'Array Object String Date RegExp Function Boolean Number Null Undefined'.split(' ');
+    return types.reduce((result, type) => {
+        result[`is${type}`] = function (obj) {
+            return Object.prototype.toString.call(obj) === `[object ${type}]`;
+        };
+        return result;
+    }, {})
+}
+```
