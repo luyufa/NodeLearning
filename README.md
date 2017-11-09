@@ -139,6 +139,7 @@
 ### css
 
 * [display行内元素与块元素](https://github.com/luyufa/NodeLearning/blob/master/css/display.md)
+* [float浮动](https://github.com/luyufa/NodeLearning/blob/master/css/float.md)
 
 
 ### html
