@@ -50,5 +50,13 @@
     }
   ```
 
+#### flex布局
 
+```
+.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+```
 
