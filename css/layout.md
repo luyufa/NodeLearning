@@ -275,3 +275,75 @@
   ```
 
 ![5](https://github.com/luyufa/NodeLearning/blob/master/css/layout/5.png)
+
+
+#### 7. 双飞翼布局
+
+```
+<div class="main-wrapper">
+    <div class="main">main</div>
+</div>
+<div class="left">left</div>
+<div class="right">right</div>
+```
+
+ 1. 首先框架基本搭建，三栏装进去，接下来要做就是把左右模块“拉”上去
+
+```
+    .main-wrapper {
+        float: left;
+        width: 100%;
+    }
+
+    .main {
+        height: 200px;
+        margin-left: 200px;
+        margin-right: 300px;
+        background-color: green;
+    }
+
+    .left {
+        width: 200px;
+        /*margin-left: -100%;*/
+        float: left;
+        height: 200px;
+        background-color: yellow;
+    }
+
+    .right {
+        /*margin-left: -300px;*/
+        float: left;
+        width: 300px;
+        height: 200px;
+        background-color: #0A9FD7;
+    }
+```
+![6](https://github.com/luyufa/NodeLearning/blob/master/css/layout/6.png)
+
+
+ 2. 设置`left` `margin-left:-100%`(浏览器宽度|最外层)
+
+```
+ .left {
+        width: 200px;
+        margin-left: -100%;
+        float: left;
+        height: 200px;
+        background-color: yellow;
+    }
+```
+ ![7](https://github.com/luyufa/NodeLearning/blob/master/css/layout/7.png)
+
+
+ 3. 设置`right` `margin-left:rightWidth`
+
+```
+ .right {
+        margin-left: -300px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        background-color: #0A9FD7;
+    }
+```
+ ![8](https://github.com/luyufa/NodeLearning/blob/master/css/layout/8.png)
