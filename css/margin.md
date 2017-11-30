@@ -3,7 +3,7 @@
 
 #### 负边距
 
-> 当元素的`margin-top`或`margin-left`为负时会引起元素向前拉(`上`或`左`)；当`margin-right`或`margin-bottom`为负时会导致该`元素右边`或`该元素下边`的元素向前拉。
+> 当元素的`margin-top`或`margin-left`为负时会引起元素向前拉(`上`或`左`)；当`margin-right`或`margin-bottom`为负时会导致该`元素右边`或`该元素下边`的元素向前拉(可以看做自身宽度减小了)。
 
 
 
