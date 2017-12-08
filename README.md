@@ -3,6 +3,7 @@
 ### Node底层原理
 * [架构分层](https://github.com/luyufa/NodeLearning/blob/master/node/framework.md)
 * [libuv](https://github.com/luyufa/NodeLearning/blob/master/node/libuv.md)
+* [v8](https://github.com/luyufa/NodeLearning/blob/master/node/v8.md)
 
 
 
