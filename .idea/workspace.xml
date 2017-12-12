@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/v8.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/network/http-methods.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/http.md" afterPath="$PROJECT_DIR$/network/http.md" />
     </list>
     <ignored path="NodeSkil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +30,28 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="89" column="80" lean-forward="false" selection-start-line="89" selection-start-column="80" selection-end-line="89" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="http.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/http.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="60" column="13" lean-forward="false" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="http-methods.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/http-methods.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -51,13 +72,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module/require.md" />
         <option value="$PROJECT_DIR$/async/promise.md" />
         <option value="$PROJECT_DIR$/async/eventLoop.md" />
         <option value="$PROJECT_DIR$/async/async.md" />
         <option value="$PROJECT_DIR$/js/es6.js" />
         <option value="$PROJECT_DIR$/js/es6.md" />
-        <option value="$PROJECT_DIR$/network/http.md" />
         <option value="$PROJECT_DIR$/async/async-await.js" />
         <option value="$PROJECT_DIR$/async/async-await.md" />
         <option value="$PROJECT_DIR$/module/npm.md" />
@@ -101,6 +120,8 @@
         <option value="$PROJECT_DIR$/node/framework.md" />
         <option value="$PROJECT_DIR$/node/libuv.md" />
         <option value="$PROJECT_DIR$/node/v8.md" />
+        <option value="$PROJECT_DIR$/network/http.md" />
+        <option value="$PROJECT_DIR$/network/http-methods.md" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -115,8 +136,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -133,8 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,12 +166,14 @@
             <path>
               <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="node" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,14 +347,10 @@
       <workItem from="1512032220727" duration="874000" />
       <workItem from="1512112298434" duration="980000" />
       <workItem from="1512561677919" duration="792000" />
-      <workItem from="1512727459145" duration="34000" />
-    </task>
-    <task id="LOCAL-00021" summary="promise">
-      <created>1496992322524</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1496992322524</updated>
+      <workItem from="1512727459145" duration="648000" />
+      <workItem from="1512982792041" duration="103000" />
+      <workItem from="1512983005980" duration="1399000" />
+      <workItem from="1513065003238" duration="62000" />
     </task>
     <task id="LOCAL-00022" summary="async&#10;">
       <created>1497275205418</created>
@@ -669,11 +688,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512112648334</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="v8">
+      <created>1512727498600</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1512727498600</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106204000" />
+    <option name="totallyTimeSpent" value="108382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,11 +715,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19863014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30120483" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.45047417" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.45468915" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33558863" sideWeight="0.43551797" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.5495258" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.54531085" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3728261" sideWeight="0.45047417" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37173912" sideWeight="0.44415173" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -745,7 +771,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="promise" />
     <MESSAGE value="async&#10;" />
     <MESSAGE value="http" />
     <MESSAGE value="this" />
@@ -770,21 +795,14 @@
     <MESSAGE value="deploy" />
     <MESSAGE value="node" />
     <MESSAGE value="libuv" />
-    <option name="LAST_COMMIT_MESSAGE" value="libuv" />
+    <MESSAGE value="v8" />
+    <option name="LAST_COMMIT_MESSAGE" value="v8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/filePmermission.png" />
     <entry file="file://$PROJECT_DIR$/linux/filePermission.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -850,13 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
           <caret line="33" column="109" lean-forward="false" selection-start-line="33" selection-start-column="109" selection-end-line="33" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/http.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4564">
-          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1101,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1902">
           <caret line="77" column="36" lean-forward="false" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,14 +1119,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="47" column="63" lean-forward="false" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/tcp_ip.png" />
+    <entry file="file://$PROJECT_DIR$/network/http.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="60" column="13" lean-forward="false" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/http-methods.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="89" column="80" lean-forward="false" selection-start-line="89" selection-start-column="80" selection-end-line="89" selection-end-column="80" />
           <folding />
         </state>
       </provider>
