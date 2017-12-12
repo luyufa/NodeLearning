@@ -4,6 +4,18 @@
 #### POST
 >post 发送数据给服务器，具体的数据类型由`Content-Type`决定
 
+ ###### application/json
+
+在RESTFul Api中使用更为广泛,使用JSON格式字符串
+
+ `request header`
+
+ ```
+  Content-Type: application/json
+
+ {key:value}
+ ```
+
  ###### application/x-www-form-urlencoded
 
  此时服务端收到`para=value&key=value`数据已`&`分隔,以`=`分隔键值，并且非字母和数字会被url编码(所以不支持二进制),本质上是一个http body是的很大的查询字符串
@@ -11,7 +23,7 @@
  `request header`
 
  ```
-  Content-Type: application/x-www-form-urlencoded,
+  Content-Type: application/x-www-form-urlencoded
 
   para=value&key=value
  ```
