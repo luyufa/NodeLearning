@@ -24,26 +24,46 @@ URL = 协议＋域名＋端口＋路径
 
 #### 跨域请求解决方案二 跨域请求资源共享CORS
 
-在进行CORS请求之前，浏览器会发送一次HTTP预检请求，判断当前请求域名是否在服务器许可范围之内，如果通过则发起HTTP请求，否则报错，此类报错无法通过HTTP状态吗识别，因为有可能状态码是200。
+在进行CORS请求之前，浏览器会发送一次HTTP预检请求，判断当前请求域名是否在服务器许可范围之内，如果通过则发起HTTP请求，否则报错，此类报错无法通过HTTP状态码识别，因为有可能状态码是200。
+
+
+###### 简单请求
+
+浏览器直接发出cors请求
 
 1. CORS请求(api.alice.com)－>(api.bob.com)
 
  ```
-PUT /cors HTTP/1.1 （api.bob.com）
-X-Custom-Header1 : value1
-X-Custom-Header2 : value2
-Access-Control-Expose-Headers : token
-```
-2. 预检请求
+ PUT /cors HTTP/1.1
+ Host:api.alice.com
+ Origin:api.bob.com 浏览器自动添加
+ ```
+
+2. CORS响应
+
+ ```
+ Access-Control-Allow-Origin:api.bob.com  允许跨域的域名,*为所有
+ Access-Control-Allow-Methods:"GET,POST,PUT,DELETE" 允许跨域的方法
+ Access-Control-Allow-Credentials:true 是否允许携带cookie，如要携带cookie则allow-origin不能为*
+ Access-Control-Expose-Headers:"token" 允许客户端拿到的特殊header字段
+ ```
+如果该origin不在许可范围之内，则服务器会返回一个正常的http响应，该响应没有包含`Access-Control-Allow-Origin`,此时客户端会抛出一个错误(有可能http statusCode为200)。
+
+
+###### 非简单请求
+> 请求方法是PUT 或 DELETE 或者请求字段中包含 Content-Type:Application/json
+
+
+1. 预检请求
 
  ```
  OPTIONS /cors HTTP/1.1 采用OPTIONS方法
  Origin: http://api.bob.com 请求域名
- Access-Control-Request-Method: PUT 用什么HTTP方法进球跨越请求
+ Access-Control-Request-Method: PUT 用什么HTTP方法进行跨越请求
  Access-Control-Request-Headers: X-Custom-Header1,X-Custom-Header2 跨域时带上的header
  Host: api.alice.com
  ```
-3. 预检请求响应
+2. 预检请求响应
 
  ```
  HTTP/1.1 200 OK
@@ -51,7 +71,7 @@ Access-Control-Expose-Headers : token
  Access-Control-Allow-Methods: GET, POST, PUT 支持的跨域请求方法
  Access-Control-Allow-Headers: X-Custom-Header1,X-Custom-Header2 允许带上的带上的头信息字段
  Access-Control-Allow-Credentials: true 表示是否允许发送cookie（要么存在要么为true）
- Access-Control-Max-Age: 24*3600 预检请求有效期
+ Access-Control-Max-Age: 24*3600 预检请求有效期，该有效期内非简单请求不用再发送预检请求
  Access-Control-Expose-Headers: getResponseHeader的基本字段＋token
  ```
 
