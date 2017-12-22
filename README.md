@@ -90,6 +90,7 @@
 * [http method](https://github.com/luyufa/NodeLearning/blob/master/network/http-methods.md)
 * [RESTful API](https://github.com/luyufa/NodeLearning/blob/master/network/RESTful.md)
 * [同源策略及跨域请求](https://github.com/luyufa/NodeLearning/blob/master/network/cors.md)
+* [JSONP](https://github.com/luyufa/NodeLearning/blob/master/network/jsonp.md)
 * tcp/ip
 * cookie & session
 
