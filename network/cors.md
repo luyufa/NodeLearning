@@ -75,7 +75,7 @@ URL = 协议＋域名＋端口＋路径
  Access-Control-Expose-Headers: getResponseHeader的基本字段＋token
  ```
 
-4. 通过预检请求后HTTP请求
+3. 通过预检请求后HTTP请求
 
  ```
 PUT /cors HTTP/1.1
@@ -85,7 +85,7 @@ X-Custom-Header1: value1
 X-Custom-Header2: value2
  ```
 
-5. 通过预检请求后HTTP响应
+4. 通过预检请求后HTTP响应
 
  ```
  Access-Control-Allow-Origin: http://api.bob.com 每次响应头中都带上Access-Control-Allow-Origin字段
