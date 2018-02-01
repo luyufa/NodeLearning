@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/list.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="NodeSkil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,17 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="118" column="19" lean-forward="false" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+            <state relative-caret-position="183">
+              <caret line="110" column="87" lean-forward="true" selection-start-line="110" selection-start-column="87" selection-end-line="110" selection-end-column="87" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redis/list.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="650">
@@ -119,9 +119,9 @@
         <option value="$PROJECT_DIR$/css/postion.md" />
         <option value="$PROJECT_DIR$/redis/cache.md" />
         <option value="$PROJECT_DIR$/redis/disk.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/redis/sds.md" />
         <option value="$PROJECT_DIR$/redis/list.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -366,7 +366,7 @@
       <workItem from="1516275540864" duration="682000" />
       <workItem from="1516672906460" duration="14000" />
       <workItem from="1516709127529" duration="720000" />
-      <workItem from="1517457282759" duration="1411000" />
+      <workItem from="1517457282759" duration="1465000" />
     </task>
     <task id="LOCAL-00028" summary="http">
       <created>1497875635282</created>
@@ -715,7 +715,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123123000" />
+    <option name="totallyTimeSpent" value="123177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1131,18 +1131,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="118" column="19" lean-forward="false" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redis/list.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="110" column="87" lean-forward="true" selection-start-line="110" selection-start-column="87" selection-end-line="110" selection-end-column="87" />
           <folding />
         </state>
       </provider>
