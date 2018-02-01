@@ -108,6 +108,7 @@
 ### Redis
 
 * [redis设计实现-数据结构-SDS](https://github.com/luyufa/NodeLearning/blob/master/redis/sds.md)
+* [redis设计实现-数据结构-SDS](https://github.com/luyufa/NodeLearning/blob/master/redis/list.md)
 * [redis的五种数据结构](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
 * [redis的事务](https://github.com/luyufa/NodeLearning/blob/master/redis/transaction.md)
 * [键的生存时间](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
