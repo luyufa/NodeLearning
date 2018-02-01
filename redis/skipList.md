@@ -1,0 +1,55 @@
+## redis设计实现-跳跃表
+> 跳跃表，一种有序数据结构，在每个结点维持多个指向其他结点的指针，支持平均O(logN)、最坏O(n)的查询
+
+```
+struct skipListNode{
+    int sorce 分值，用于排序
+
+    object value 结点值
+
+    skipListNode *backward 后退指针，指向前一个结点
+
+    skipListLevel {
+        skipListNode *forward 前进指针
+
+        int span 跨度
+    }level []  通过层来加快访问结点的速度
+}
+```
+
+```
+struct skipList{
+    int len 结点数量
+
+    int leve 最大层数
+
+    skipListNode *head 跳跃表头结点
+
+    skipListNode *tail 跳跃表尾结点
+}
+```
+
+###### 跳跃表搜索A
+
+1. 从顶层开始通过forward指针和span找到下一个结点X
+2. 比较A与X的大小关系，如果A大于X，且下个结点不是尾结点，则继续在该层前进，至到A小于X或下个结点是尾结点。通过X结点进入下层
+3. 如果A小于X，则通过backward后退比较
+
+![事件循环](https://github.com/luyufa/NodeLearning/blob/master/redis/img/skipList.png)
+
+例如查找元素117
+
+1. 比较21，比21大，前进
+2. 比较37，比37大，下个结点是尾结点，进入下层
+3. 比较71，比71大，下个结点是尾结点，进入下层
+4. 比较85，比85大，前进
+5. 比较117，等于117 找到
+
+
+例如查找元素14
+
+1. 比较21，比21小，后退
+2. 比较14，等于14，找到
+
+
+

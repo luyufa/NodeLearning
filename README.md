@@ -110,6 +110,7 @@
 * [redis设计实现-数据结构-SDS](https://github.com/luyufa/NodeLearning/blob/master/redis/sds.md)
 * [redis设计实现-数据结构-链表](https://github.com/luyufa/NodeLearning/blob/master/redis/list.md)
 * [redis设计实现-数据结构-字典](https://github.com/luyufa/NodeLearning/blob/master/redis/dict.md)
+* [redis设计实现-数据结构-跳跃表](https://github.com/luyufa/NodeLearning/blob/master/redis/skipList.md)
 * [redis的五种数据结构](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
 * [redis的事务](https://github.com/luyufa/NodeLearning/blob/master/redis/transaction.md)
 * [键的生存时间](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
