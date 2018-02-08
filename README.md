@@ -148,8 +148,8 @@
 
 ### 其他
 
-* [pm2](https://github.com/luyufa/NodeLearning/blob/master/deploy/pm2.md)
-
+* [pm2](https://github.com/luyufa/NodeLearning/blob/master/other/pm2.md)
+* [express vs koa](https://github.com/luyufa/NodeLearning/blob/master/other/express-koa.md)
 
 
 ### Angular
