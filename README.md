@@ -103,6 +103,7 @@
 
 
 ### Mysql
+* [关系型数据库范式](https://github.com/luyufa/NodeLearning/blob/master/mysql/NF.md)
 * [索引](https://github.com/luyufa/NodeLearning/blob/master/mysql/index.md)
 
 
