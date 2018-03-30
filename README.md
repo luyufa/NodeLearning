@@ -105,6 +105,8 @@
 ### Mysql
 * [关系型数据库范式](https://github.com/luyufa/NodeLearning/blob/master/mysql/NF.md)
 * [索引](https://github.com/luyufa/NodeLearning/blob/master/mysql/index.md)
+* [锁](https://github.com/luyufa/NodeLearning/blob/master/mysql/lock.md)
+* [ACID](https://github.com/luyufa/NodeLearning/blob/master/mysql/acid.md)
 
 
 ### Redis
