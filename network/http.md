@@ -9,7 +9,7 @@
 
 
 
- ![TCP/IP协议簇数据](https://github.com/luyufa/NodeLearning/blob/master/network/tcp:ip.png)
+TCP/IP协议簇数据
 
 
  * http通信过程TCP/IP协议簇发挥的作用
