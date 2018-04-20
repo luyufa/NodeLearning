@@ -18,11 +18,6 @@
    存在公钥和私钥，公钥加密仅私钥可解，私钥加密仅公钥可解，加密解密效率相对较低，传输仅单向安全。
 
 
-##### HTTPS通讯时序图
-
-![TCP/IP](https://github.com/luyufa/NodeLearning/blob/master/network/https/3.png)
-
-
 
 ##### 证书
 > 浏览器内置权威CA机构的根证书
@@ -72,3 +67,7 @@
 
     4. 如A!=B则认定为危险证书
     ```
+
+ ##### HTTPS通讯时序图
+
+ ![TCP/IP](https://github.com/luyufa/NodeLearning/blob/master/network/https/3.png)
