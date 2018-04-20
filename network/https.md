@@ -71,3 +71,6 @@
  ##### HTTPS通讯时序图
 
  ![TCP/IP](https://github.com/luyufa/NodeLearning/blob/master/network/https/3.png)
+
+
+ps:一个伪随机可能完全不随机，可是是三个伪随机就十分接近随机了，每增加一个自由度，随机性增加的可不是一
