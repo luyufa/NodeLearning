@@ -39,3 +39,49 @@ clear清除浮动只能影响使用clear元素本身，不能影响其他元素�
 表示class=c的div左边不能有浮动元素
 
 ![清除浮动](https://github.com/luyufa/NodeLearning/blob/master/css/float/5.png)
+
+
+父容器高度塌陷
+```
+.warp {
+            border: 1px solid black;
+            background-color: #00a1ea;
+        }
+        .box {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background-color: yellow;
+        }
+ <div class="warp">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+```
+![父元素高度塌陷](https://github.com/luyufa/NodeLearning/blob/master/css/float/11.png)
+
+
+```
+.warp {
+            border: 1px solid black;
+            background-color: #00a1ea;
+        }
+        .box {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background-color: yellow;
+        }
+ <div class="warp">
+    <div class="box"></div>
+    <div class="box"></div> //clear:left 高度依旧塌陷
+    <div class="box"></div>
+    <div style="clear:left"> // 可以正确计算高度
+</div>
+```
+![clear恢复父容器高度](https://github.com/luyufa/NodeLearning/blob/master/css/float/12.png)
+
+clear:left属性只是消除其左侧div浮动对它自己造成的影响，而不会改变左侧div甚至于父容器的表现，在父容器看来，三个div还都是float的，所以高度依旧塌陷。但是我们在最后添加了一个非浮动的div，由于它有clear:left属性，所以它会按照左侧div不浮动来定位自己，也就是定位到下一行，而父容器看到有一个非浮动、普通流的子元素元素，会将其包围，这样造成了顺便也把三个浮动元素也包裹起来的效果，高度不再塌陷
