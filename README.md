@@ -177,3 +177,6 @@
 * [浏览器对象模型(BOM)](https://github.com/luyufa/NodeLearning/blob/master/html/bom.md)
 * [文档对象模型(DOM)](https://github.com/luyufa/NodeLearning/blob/master/html/dom.md)
 
+### 前端工程化
+
+* [模块](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/module.md)
