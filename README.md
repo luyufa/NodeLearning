@@ -159,12 +159,6 @@
 * [express vs koa](https://github.com/luyufa/NodeLearning/blob/master/other/express-koa.md)
 
 
-### Angular
-* [作用域与事件](https://github.com/luyufa/NodeLearning/blob/master/angular/scope.md)
-
-###### 常见问题
-
-* 跨作用域中常见的通讯方式有那些?
 
 
 ### css
