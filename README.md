@@ -180,3 +180,4 @@
 ### 前端工程化
 
 * [模块](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/module.md)
+* [webpack基本配置](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.base.config.md)
