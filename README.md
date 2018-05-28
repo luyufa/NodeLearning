@@ -181,3 +181,4 @@
 
 * [模块](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/module.md)
 * [webpack基本配置](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.base.config.md)
+* [webpack loader](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.loader.md)

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwBuild/webpack.base.config.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwBuild/webpack.loader.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="182" column="95" lean-forward="false" selection-start-line="182" selection-start-column="95" selection-end-line="182" selection-end-column="95" />
+              <caret line="183" column="97" lean-forward="true" selection-start-line="183" selection-start-column="97" selection-end-line="183" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -58,7 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/process/child_process.md" />
         <option value="$PROJECT_DIR$/algorithm/maze.md" />
         <option value="$PROJECT_DIR$/algorithm/mazeDFS.md" />
         <option value="$PROJECT_DIR$/process/cluster.js" />
@@ -108,6 +107,7 @@
         <option value="$PROJECT_DIR$/wwwBuild/module.md" />
         <option value="$PROJECT_DIR$/css/float.md" />
         <option value="$PROJECT_DIR$/wwwBuild/webpack.base.config.md" />
+        <option value="$PROJECT_DIR$/wwwBuild/webpack.loader.md" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -139,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,7 +157,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,14 +369,9 @@
       <workItem from="1525341947064" duration="799000" />
       <workItem from="1525936213560" duration="1379000" />
       <workItem from="1525953843181" duration="1200000" />
-      <workItem from="1526610616348" duration="90000" />
-    </task>
-    <task id="LOCAL-00049" summary="地狱回调">
-      <created>1502374662890</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1502374662890</updated>
+      <workItem from="1526610616348" duration="1158000" />
+      <workItem from="1526647870117" duration="186000" />
+      <workItem from="1527508409201" duration="49000" />
     </task>
     <task id="LOCAL-00050" summary="进程">
       <created>1502718663524</created>
@@ -714,11 +709,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525954969489</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="webpack base config">
+      <created>1526610714942</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1526610714942</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139935000" />
+    <option name="totallyTimeSpent" value="141238000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,11 +736,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19863014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30120483" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.51369864" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.51580614" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33558863" sideWeight="0.43551797" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.48630136" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.4841939" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37214363" sideWeight="0.41886196" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37173912" sideWeight="0.41412014" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -790,7 +792,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="maze" />
     <MESSAGE value="binaryTree" />
     <MESSAGE value="redis" />
     <MESSAGE value="bom" />
@@ -815,20 +816,14 @@
     <MESSAGE value="bfc" />
     <MESSAGE value="module" />
     <MESSAGE value="float" />
-    <option name="LAST_COMMIT_MESSAGE" value="float" />
+    <MESSAGE value="webpack base config" />
+    <option name="LAST_COMMIT_MESSAGE" value="webpack base config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/async/event.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/eventLoop.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1111,7 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3640">
           <caret line="140" column="102" lean-forward="false" selection-start-line="140" selection-start-column="102" selection-end-line="140" selection-end-column="102" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3151">
           <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,6 +1120,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="80" column="27" lean-forward="false" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwBuild/webpack.loader.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3073">
+          <caret line="162" column="3" lean-forward="false" selection-start-line="162" selection-start-column="3" selection-end-line="162" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1134,7 +1134,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="182" column="95" lean-forward="false" selection-start-line="182" selection-start-column="95" selection-end-line="182" selection-end-column="95" />
+          <caret line="183" column="97" lean-forward="true" selection-start-line="183" selection-start-column="97" selection-end-line="183" selection-end-column="97" />
           <folding />
         </state>
       </provider>
