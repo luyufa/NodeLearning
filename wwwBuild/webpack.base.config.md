@@ -17,6 +17,9 @@
 `webpack`为生成的每个`chunk`起一个名字
  * 如果`entry`是`string`或`array`，只会生成一个`chunk`，并且名字为`main`
  * 如果`entry`是`object`，则会生成多个`chunk`，每个`chunk`的名字为`object key`
+ * `chunk`是若干`module`打成的包，一个 chunk 应该包括多个 module，一般来说最终会形成一个 file，
+而 js 以外的资源，webpack 会通过各种 loader 转化成一个 module，这个模块会被打包到某个 chunk 中，并不会形成一个单独的 chunk
+ 
 
 ###### 2. output
 ```
