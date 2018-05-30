@@ -245,6 +245,41 @@ doSomething().then(doSomethingElse)
 ```
 
 
+###### promise并发控制
+
+```
+const load = url => new Promise(r => setTimeout(() => r(url), 2000));
+function asyncLoad(tasks, onHandler, callback, limit = tasks.length) {
+    limit = tasks.length < limit ? tasks.length : limit;
+    const queue = tasks.splice(0, limit);
+    let count = 0;
+
+    function _next() {
+        if (tasks.length) {
+            const task = tasks.shift();
+            load(task).then(url => {
+                onHandler(url);
+                _next();
+            })
+        } else {
+            if (++count === limit) {
+                callback()
+            }
+            return false
+        }
+    }
+
+    for (let i = 0; queue.length; i++) {
+        load(queue.shift()).then(url => {
+            onHandler(url);
+            _next()
+        })
+    }
+}
+
+```
+
+
 参考链接:
 
 * [promise实现](https://github.com/xieranmaya/blog/issues/3)
