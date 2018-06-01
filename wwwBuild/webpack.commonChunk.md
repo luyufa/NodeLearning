@@ -166,5 +166,5 @@ require.ensure([],require=>require('./c.js'),'c')
 
 
 ###### 参考链接
-[webpack优化与使用](https://github.com/creeperyang/blog/issues/37)
-[webpack大法之code split](https://zhuanlan.zhihu.com/p/26710831?refer=ElemeFE)
+* [webpack优化与使用](https://github.com/creeperyang/blog/issues/37)
+* [webpack大法之code split](https://zhuanlan.zhihu.com/p/26710831?refer=ElemeFE)
