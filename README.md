@@ -185,3 +185,4 @@
 * [webpack ensure](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.ensure.md)
 * [webpack缓存实现之hash与chunkhash](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.cache.md)
 * [webpack commonChunk](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.commonChunk.md)
+* [webpack hmr](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.commonChunk.md)
