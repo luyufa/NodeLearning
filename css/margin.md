@@ -7,17 +7,17 @@
 * 普通流:除去浮动、绝对定位的其他代码
 
 * 兄弟元素
-![1](1)
+![1](https://github.com/luyufa/NodeLearning/blob/master/css/margin/1.gif)
    1. 普通流中一个元素的 `margtin-bottom` 和它的紧邻的兄弟元素的的 `margin-top`
 
 * 父子元素
-![2](2)
+![2](https://github.com/luyufa/NodeLearning/blob/master/css/margin/2.gif)
 
   1. 一个元素的`margin-top`和它的第一个子元素的`margin-top`
   2. 一个元素`height:auto `的 `margin-bottom` 和它的最后一个子元素的`margin-bottom`
 
 * 空元素
-![3](3)
+![3](https://github.com/luyufa/NodeLearning/blob/master/css/margin/3.gif)
   1. 一个没有创建 `BFC`、`没有子元素`、`height:0`的元素自身的 `margin-top` 和 `margin-bottom`
 
 
