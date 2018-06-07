@@ -1,5 +1,5 @@
 ## webpack 代码分包
-
+> 抽取js和css
 
 ##### chunk
 > 多个模块打包后的集合称为chunk
