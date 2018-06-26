@@ -4,6 +4,7 @@
 * [架构分层](https://github.com/luyufa/NodeLearning/blob/master/node/framework.md)
 * [libuv](https://github.com/luyufa/NodeLearning/blob/master/node/libuv.md)
 * [v8](https://github.com/luyufa/NodeLearning/blob/master/node/v8.md)
+* [module加载过程](https://github.com/luyufa/NodeLearning/blob/master/node/module.md)
 
 
 
