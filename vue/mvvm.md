@@ -114,12 +114,12 @@ update: function () {
 ![mvvm流程图](https://github.com/luyufa/NodeLearning/blob/master/vue/img/mvvm.png)
 
 
-[模拟实现vue mvvm-dep](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/dep.js)
-[模拟实现vue mvvm-watcher](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/watcher.js)
-[模拟实现vue mvvm-observe](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/observe.js)
-[模拟实现vue mvvm-compile](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/compile.js)
-[模拟实现vue mvvm-mvvm](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/mvvm.js)
-[模拟实现vue mvvm-实例](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/index.html)
+* [模拟实现vue mvvm-dep](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/dep.js)
+* [模拟实现vue mvvm-watcher](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/watcher.js)
+* [模拟实现vue mvvm-observe](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/observe.js)
+* [模拟实现vue mvvm-compile](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/compile.js)
+* [模拟实现vue mvvm-mvvm](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/mvvm.js)
+* [模拟实现vue mvvm-实例](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/index.html)
 
 ##### ps:参考文档
-[https://github.com/DMQ/mvvm](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/index.html)
+[剖析vue实现原理，自己动手实现mvvm](https://github.com/DMQ/mvvm)
