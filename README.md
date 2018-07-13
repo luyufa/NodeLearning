@@ -189,3 +189,7 @@
 * [webpack commonChunk](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.commonChunk.md)
 * [webpack hmr](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.hmr.md)
 * [webpack extractText](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.extractText.md)
+
+### Vue
+
+* [双向数据绑定mvvm](https://github.com/luyufa/NodeLearning/blob/master/vue/mvvm.md)

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <div> {{a.b.c}}</div>
+</div>
+</body>
+<script src="dep.js"></script>
+<script src="observe.js"></script>
+<script src="watcher.js"></script>
+<script src="compile.js"></script>
+<script src="mvvm.js"></script>
+<script>
+    const vm = new MVVm({
+        el: '#app',
+        data: {
+            a: {
+                b: {
+                    c: 'd'
+                }
+            }
+        }
+    });
+</script>
+</html>
