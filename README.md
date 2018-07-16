@@ -193,3 +193,4 @@
 ### Vue
 
 * [双向数据绑定mvvm](https://github.com/luyufa/NodeLearning/blob/master/vue/mvvm.md)
+* [nextTick](https://github.com/luyufa/NodeLearning/blob/master/vue/nextTick.md)
