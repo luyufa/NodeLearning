@@ -214,6 +214,9 @@ methodsToPatch.forEach(function (method) {
 ##### 3. 代理属性到vm上？
 > `data`和`computed`都通过`Object.definedPrototype`代理至`vm`实例上，可通过`vm`直接访问。
 
+这样当前vm的后代实例就能直接通过原型链查找到父代的属性
+比如v-for指令会为数组的每一个元素创建一个scope,这个scope就继承自vm或上级数组元素的scope,
+这样就可以在v-for的作用域中访问父级的数据
 ```
 export function initState (vm) {
   const opts = vm.$options
