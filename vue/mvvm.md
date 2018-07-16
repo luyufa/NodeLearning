@@ -114,6 +114,139 @@ update: function () {
 ![mvvm流程图](https://github.com/luyufa/NodeLearning/blob/master/vue/img/mvvm.png)
 
 
+##### 1. `definedReactive`闭包中的`dep`和`Observe`类中的`dep`区别？
+
+精简代码如下
+```
+class Ovserve{
+    dep:Dep
+
+    constructor(value){
+        def(value, '__ob__', this)//为对象挂载一个__ob__对象指向当前dep
+    }
+
+    defineReactive:function(obj,key,value){
+        const dep = new Dep()
+
+        const child=observe(value)//如果value是对象或者数组
+        Object.definedReactive(obj,key,{
+            get:function(){
+                if(Dep.target){
+                    dep.depend()//闭包里的dep
+                    if(child){
+                        child.dep.depend()//Observe的dep
+                    }
+                }
+            }
+        })
+    }
+}
+```
+
+`getter`和`setter`存在一个缺陷便是，无法监听到属性的**删除**和**新增**(`Vue`提供了响应式的`vm.$set` `vm.$delete`),为所有的对象和数组(仅对象和数组才可能删除和新增属性)，也创建一个`dep`
+
+即当我们在模板中`{{a.b}}`时
+
+![3](https://github.com/luyufa/NodeLearning/blob/master/vue/img/3.png)
+
+当执行一个`Vue.delete(this.a,b)`时，会先删除对象属性再执行`ob.dep.notify()`，属性添加类似。
+```
+function del (target, key) {
+  var ob = (target).__ob__;
+  delete target[key];
+  ob.dep.notify();
+}
+```
+
+
+
+##### 2. 如何监听数组？
+> 先设置数组变异方法,依靠`ob.__proto__.dep.notify()进行通知`
+
+精简代码如下
+```
+import { arrayMethods } from './array'//获得数组的变异方法
+const arrayKeys = Object.getOwnPropertyNames(arrayMethods)
+
+class Ovserve{
+    constructor(value){
+      if (Array.isArray(value)) {
+        const augment = hasProto? protoAugment: copyAugment
+        augment(value, arrayMethods, arrayKeys)
+      }
+    }
+}
+
+
+function protoAugment (target, src) {
+  target.__proto__ = src
+}
+
+function copyAugment (target, src, keys) {
+  for (let i = 0, l = keys.length; i < l; i++) {
+    const key = keys[i]
+    def(target, key, src[key])
+  }
+}
+```
+先判断`__proto__`能不能用(`hasProto`)，如果能用，则把那个一个继承自`Array.prototype`的并且添加了变异方法的`Object` (`arrayMethods`)，设置为当前数组的`__proto__`，完成改造，如果`__proto__`不能用，那么就只能遍历`arrayMethods`就一个个的把变异方法`def`到数组实例上面去
+
+`array.js`
+```
+const methodsToPatch = ['push','pop','shift','unshift','splice','sort','reverse']
+
+const arrayProto = Array.prototype
+export const arrayMethods = Object.create(arrayProto)
+
+methodsToPatch.forEach(function (method) {
+
+  const original = arrayProto[method]//原方法
+
+  def(arrayMethods, method, function mutator (...args) {//定义变异方法
+    const result = original.apply(this, args)//执行基本的逻辑
+    const ob = this.__ob__
+    ob.dep.notify()//变动通知
+    return result
+  })
+})
+```
+
+##### 3. 代理属性到vm上？
+> `data`和`computed`都通过`Object.definedPrototype`代理至`vm`实例上，可通过`vm`直接访问。
+
+```
+export function initState (vm) {
+  const opts = vm.$options
+  if (opts.data)
+    initData(vm)
+  if (opts.computed)
+    initComputed(vm, opts.computed)
+}
+
+function initData (vm) {
+  let data = vm.$options.data
+  vm._data = data
+  const keys = Object.keys(data)
+
+  let i = keys.length
+  while (i--) {
+    const key = keys[i]
+    proxy(vm, `_data`, key)
+    //把每一个key代理至vm上，即vm.key <=> vm._data.key
+  }
+}
+
+function proxy (target, sourceKey, key) {
+  sharedPropertyDefinition.get = function proxyGetter () {
+    return this[sourceKey][key]
+  }
+  sharedPropertyDefinition.set = function proxySetter (val) {
+    this[sourceKey][key] = val
+  }
+  Object.defineProperty(target, key, sharedPropertyDefinition)
+}
+```
+
 * [模拟实现vue mvvm-dep](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/dep.js)
 * [模拟实现vue mvvm-watcher](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/watcher.js)
 * [模拟实现vue mvvm-observe](https://github.com/luyufa/NodeLearning/blob/master/vue/src/mvvm/observe.js)
