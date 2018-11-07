@@ -2,7 +2,7 @@
 > 把url当作资源,通过method(`GET` `POST` `DELETE` `PUT`)对资源做不同的动作。
 
 
-`url`作为资源，其中不应该包含动词
+`url`作为资源，其中不应该包含动词。
 
 `api`版本号可以放在`request headers`
 
