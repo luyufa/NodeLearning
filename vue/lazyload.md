@@ -16,6 +16,11 @@
  * `offsetTop` `offsetLeft` 距离最近的position不为static的祖先元素(默认为body);
 
 
+###### `document.body` `document.documentElement`
+* 页面具有 `DTD`，或者说指定了 `DOCTYPE` 时，使用 `document.documentElement。`
+* 页面**不**具有 `DTD`，或者说没有指定 `DOCTYPE`，时，使用 `document.body`
+
+
 所以 我们要判断一个元素是否在可视区域
 
 ```
