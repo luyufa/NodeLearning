@@ -36,3 +36,8 @@
 
 FHS（目录配置）
 `dev`,`etc`,`lib`,`var`,`usr`,`bin`
+
+
+
+* [File Permission](https://github.com/luyufa/NodeLearning/blob/master/linux/filePermission.md)
+* [File Manage](https://github.com/luyufa/NodeLearning/blob/master/linux/fileManage.md)
