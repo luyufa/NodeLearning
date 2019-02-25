@@ -131,7 +131,7 @@
 
 ### Linux基本操作及Shell编程入门
 * [tar](https://github.com/luyufa/NodeLearning/blob/master/linux/tar.md)
-
+* [tar](https://github.com/luyufa/NodeLearning/blob/master/linux/fileManage.md)
 
 
 ### 算法与数据结构
