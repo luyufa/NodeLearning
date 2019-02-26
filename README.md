@@ -132,6 +132,7 @@
 ### Linux基本操作及Shell编程入门
 * [tar](https://github.com/luyufa/NodeLearning/blob/master/linux/tar.md)
 * [mv、cp、rm、ls、mkdir](https://github.com/luyufa/NodeLearning/blob/master/linux/fileManage.md)
+* [tail、grep](https://github.com/luyufa/NodeLearning/blob/master/linux/tail_grep.md)
 
 
 ### 算法与数据结构
