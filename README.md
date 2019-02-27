@@ -133,6 +133,7 @@
 * [tar](https://github.com/luyufa/NodeLearning/blob/master/linux/tar.md)
 * [mv、cp、rm、ls、mkdir](https://github.com/luyufa/NodeLearning/blob/master/linux/fileManage.md)
 * [tail、grep](https://github.com/luyufa/NodeLearning/blob/master/linux/tail_grep.md)
+* [ps、find](https://github.com/luyufa/NodeLearning/blob/master/linux/ps_find.md)
 
 
 ### 算法与数据结构
