@@ -196,3 +196,9 @@
 * [双向数据绑定mvvm](https://github.com/luyufa/NodeLearning/blob/master/vue/mvvm.md)
 * [nextTick](https://github.com/luyufa/NodeLearning/blob/master/vue/nextTick.md)
 * [vue-lazyload](https://github.com/luyufa/NodeLearning/blob/master/vue/lazyload.md)
+
+
+### 浏览器
+
+* [浏览器渲染](https://github.com/luyufa/NodeLearning/blob/master/browser/render.md)
+* [前端性能监控](https://github.com/luyufa/NodeLearning/blob/master/browser/perfermance.md)
