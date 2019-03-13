@@ -176,11 +176,6 @@
 * [BFC](https://github.com/luyufa/NodeLearning/blob/master/css/bfc.md)
 * [各种百分比](https://github.com/luyufa/NodeLearning/blob/master/css/percentage.md)
 
-### html
-
-* [浏览器对象模型(BOM)](https://github.com/luyufa/NodeLearning/blob/master/html/bom.md)
-* [文档对象模型(DOM)](https://github.com/luyufa/NodeLearning/blob/master/html/dom.md)
-
 ### 前端工程化
 
 * [模块](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/module.md)
@@ -202,6 +197,7 @@
 
 ### 浏览器
 
+* [DOM & BOM.md](https://github.com/luyufa/NodeLearning/blob/master/browser/dom_bom.md)
 * [输入URL到页面显示(网络为主)](https://github.com/luyufa/NodeLearning/blob/master/browser/urlToRender.md)
 * [浏览器渲染](https://github.com/luyufa/NodeLearning/blob/master/browser/render.md)
 * [前端性能监控](https://github.com/luyufa/NodeLearning/blob/master/browser/perfermance.md)
