@@ -6,6 +6,10 @@
 * [v8](https://github.com/luyufa/NodeLearning/blob/master/node/v8.md)
 * [module加载过程](https://github.com/luyufa/NodeLearning/blob/master/node/module.md)
 
+###### 常见问题
+* a.js 和 b.js 两个文件互相 require 是否会死循环? 双方是否能导出变量?
+* 如果 a.js require 了 b.js, 那么在 b 中定义全局变量 t = 111 能否在 a 中直接打印出来?
+* 如何在不重启 node 进程的情况下热更新一个 js/json 文件?
 
 
 ### IO
@@ -24,21 +28,6 @@
 * 什么是文件描述符? 输入流/输出流/错误流是什么?
 * 如何实现一个 console.log?
 * 如何遍历文件夹?
-
-
-### Module
-
-* [CommonJS规范的实现](https://github.com/luyufa/NodeLearning/blob/master/module/commonJS.md)
-* [npm](https://github.com/luyufa/NodeLearning/blob/master/module/npm.md)
-* [模块加载机制](https://github.com/luyufa/NodeLearning/blob/master/module/module.md)
-* [从require开始](https://github.com/luyufa/NodeLearning/blob/master/module/require.md)
-
-###### 常见问题
-
-* a.js 和 b.js 两个文件互相 require 是否会死循环? 双方是否能导出变量?
-* 如果 a.js require 了 b.js, 那么在 b 中定义全局变量 t = 111 能否在 a 中直接打印出来?
-* 如何在不重启 node 进程的情况下热更新一个 js/json 文件?
-
 
 
 ### JS
@@ -137,7 +126,7 @@
 * [ps、find](https://github.com/luyufa/NodeLearning/blob/master/linux/ps_find.md)
 
 
-### 算法与数据结构
+### 基础算法与数据结构
 
 * [选择排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/selectSort.md)
 * [插入排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/insertSort.md)
@@ -148,12 +137,6 @@
 * [广度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeBFS.md)
 * [深度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeDFS.md)
 * [二叉树遍历](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binaryTree.md)
-
-
-
-### 进程
-
-* [Node child_process](https://github.com/luyufa/NodeLearning/blob/master/process/node_child_process.md)
 
 
 ### 其他
