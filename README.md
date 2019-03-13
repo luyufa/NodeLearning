@@ -200,6 +200,7 @@
 
 ### 浏览器
 
+* [输入URL到页面显示(网络为主)](https://github.com/luyufa/NodeLearning/blob/master/browser/urlToRender.md)
 * [浏览器渲染](https://github.com/luyufa/NodeLearning/blob/master/browser/render.md)
 * [前端性能监控](https://github.com/luyufa/NodeLearning/blob/master/browser/perfermance.md)
-* [输入URL到页面显示](https://github.com/luyufa/NodeLearning/blob/master/browser/urlToRender.md)
+* [浏览器重排重绘](https://github.com/luyufa/NodeLearning/blob/master/browser/repaint.md)
