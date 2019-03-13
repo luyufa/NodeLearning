@@ -87,46 +87,22 @@
 
 ### Redis
 
-* [redis设计实现-数据结构-SDS](https://github.com/luyufa/NodeLearning/blob/master/redis/sds.md)
-* [redis设计实现-数据结构-链表](https://github.com/luyufa/NodeLearning/blob/master/redis/list.md)
-* [redis设计实现-数据结构-字典](https://github.com/luyufa/NodeLearning/blob/master/redis/dict.md)
-* [redis设计实现-数据结构-跳跃表](https://github.com/luyufa/NodeLearning/blob/master/redis/skipList.md)
-* [redis设计实现-数据结构-压缩列表](https://github.com/luyufa/NodeLearning/blob/master/redis/zllist.md)
-* [redis设计实现-单机数据库](https://github.com/luyufa/NodeLearning/blob/master/redis/single-redis-database.md)
-* [redis的五种对象](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
-* [redis的事务](https://github.com/luyufa/NodeLearning/blob/master/redis/transaction.md)
-* [键的生存时间](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
-* [任务队列的两种实现方式](https://github.com/luyufa/NodeLearning/blob/master/redis/queue.md)
-* [基于redis的缓存设计](https://github.com/luyufa/NodeLearning/blob/master/redis/cache.md)
-* [redis持久化策略](https://github.com/luyufa/NodeLearning/blob/master/redis/disk.md)
-* [击穿、雪崩、并发](https://github.com/luyufa/NodeLearning/blob/master/redis/concurrency.md)
+* [redis的五种数据结构-使用](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
+* [expire与过期策略](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
+* 任务队列的两种实现方式
+* [aof & rdb](https://github.com/luyufa/NodeLearning/blob/master/redis/disk.md)
+* [缓存、击穿、雪崩、并发](https://github.com/luyufa/NodeLearning/blob/master/redis/concurrency.md)
 
 
-### Linux基本操作及Shell编程入门
+
+
+
+### Linux基本操作
+
 * [tar](https://github.com/luyufa/NodeLearning/blob/master/linux/tar.md)
 * [mv、cp、rm、ls、mkdir](https://github.com/luyufa/NodeLearning/blob/master/linux/fileManage.md)
 * [tail、grep](https://github.com/luyufa/NodeLearning/blob/master/linux/tail_grep.md)
 * [ps、find](https://github.com/luyufa/NodeLearning/blob/master/linux/ps_find.md)
-
-
-### 基础算法与数据结构
-
-* [选择排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/selectSort.md)
-* [插入排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/insertSort.md)
-* [冒泡排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/bubbleSort.md)
-* [快速排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/quickSort.md)
-* [归并排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mergeSort.md)
-* [二分搜索](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binarySearch.md)
-* [广度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeBFS.md)
-* [深度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeDFS.md)
-* [二叉树遍历](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binaryTree.md)
-
-
-### 其他
-
-* [pm2](https://github.com/luyufa/NodeLearning/blob/master/other/pm2.md)
-* [express vs koa](https://github.com/luyufa/NodeLearning/blob/master/other/express-koa.md)
-* [前端综合](https://github.com/luyufa/NodeLearning/blob/master/other/wwwSum.md)
 
 
 
@@ -142,6 +118,9 @@
 * [BFC](https://github.com/luyufa/NodeLearning/blob/master/css/bfc.md)
 * [各种百分比](https://github.com/luyufa/NodeLearning/blob/master/css/percentage.md)
 
+
+
+
 ### 前端工程化
 
 * [模块](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/module.md)
@@ -153,12 +132,17 @@
 * [webpack hmr](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.hmr.md)
 * [webpack extractText](https://github.com/luyufa/NodeLearning/blob/master/wwwBuild/webpack.extractText.md)
 
+
+
+
 ### Vue
 
 * [vue双向数据绑定](https://github.com/luyufa/NodeLearning/blob/master/vue/mvvm.md)
 * [虚拟DOM及diff](https://github.com/luyufa/NodeLearning/blob/master/vue/virtualDom.md)
 * [nextTick](https://github.com/luyufa/NodeLearning/blob/master/vue/nextTick.md)
 * [vue-lazyload](https://github.com/luyufa/NodeLearning/blob/master/vue/lazyload.md)
+
+
 
 
 ### 浏览器与网络
@@ -168,6 +152,20 @@
 * [渲染](https://github.com/luyufa/NodeLearning/blob/master/browser/render.md)
 * [性能监控](https://github.com/luyufa/NodeLearning/blob/master/browser/perfermance.md)
 * [重排&重绘](https://github.com/luyufa/NodeLearning/blob/master/browser/repaint.md)
-* [同源&跨域](https://github.com/luyufa/NodeLearning/blob/master/browser/repaint.md)
+* [同源&跨域](https://github.com/luyufa/NodeLearning/blob/master/browser/cors.md)
 * [缓存](https://github.com/luyufa/NodeLearning/blob/master/browser/http-cache.md)
 * [https](https://github.com/luyufa/NodeLearning/blob/master/network/https.md)
+
+
+
+### 基础算法与数据结构
+
+* [选择排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/selectSort.md)
+* [插入排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/insertSort.md)
+* [冒泡排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/bubbleSort.md)
+* [快速排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/quickSort.md)
+* [归并排序](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mergeSort.md)
+* [二分搜索](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binarySearch.md)
+* [广度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeBFS.md)
+* [深度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeDFS.md)
+* [二叉树遍历](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binaryTree.md)

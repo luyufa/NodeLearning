@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browser/cache.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browser/https/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browser/https/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browser/https/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browser/cors.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browser/http-cache.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/browser/https.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/cache.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/concurrency.md" afterPath="$PROJECT_DIR$/redis/concurrency.md" />
     </list>
     <ignored path="NodeSkil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,85 +30,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2101">
-              <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="https.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/browser/https.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="72" column="76" lean-forward="false" selection-start-line="72" selection-start-column="76" selection-end-line="72" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http-cache.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/http-cache.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http-cache.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/browser/http-cache.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="101" column="71" lean-forward="false" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="perfermance.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/browser/perfermance.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="30" column="82" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cache.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/cache.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cors.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/cors.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jsonp.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/jsonp.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dom_bom.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/browser/dom_bom.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3796">
-              <caret line="146" column="39" lean-forward="true" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+            <state relative-caret-position="26">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,8 +40,8 @@
       <file leaf-file-name="concurrency.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redis/concurrency.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="629">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -205,12 +123,12 @@
         <option value="$PROJECT_DIR$/browser/repaint.md" />
         <option value="$PROJECT_DIR$/vue/mvvm.md" />
         <option value="$PROJECT_DIR$/vue/virtualDom.md" />
-        <option value="$PROJECT_DIR$/redis/concurrency.md" />
         <option value="$PROJECT_DIR$/browser/dom&amp;bom.md" />
         <option value="$PROJECT_DIR$/browser/dom_bom.md" />
         <option value="$PROJECT_DIR$/browser/cors.md" />
         <option value="$PROJECT_DIR$/browser/http-cache.md" />
         <option value="$PROJECT_DIR$/browser/https.md" />
+        <option value="$PROJECT_DIR$/redis/concurrency.md" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -257,13 +175,7 @@
             <path>
               <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-              <item name="https" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -521,14 +433,7 @@
       <workItem from="1551183909882" duration="97000" />
       <workItem from="1551269803853" duration="117000" />
       <workItem from="1552462110482" duration="3360000" />
-      <workItem from="1552466225596" duration="628000" />
-    </task>
-    <task id="LOCAL-00088" summary="https">
-      <created>1524218763850</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1524218763851</updated>
+      <workItem from="1552466225596" duration="1432000" />
     </task>
     <task id="LOCAL-00089" summary="https">
       <created>1524221146897</created>
@@ -866,11 +771,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552465441207</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="浏览器和网络">
+      <created>1552466862322</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1552466862322</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162610000" />
+    <option name="totallyTimeSpent" value="163414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -942,7 +854,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="webpack ensure" />
     <MESSAGE value="promise async pall" />
     <MESSAGE value="webpack hash chunhash" />
     <MESSAGE value="webpack common chunk plugin" />
@@ -967,20 +878,14 @@
     <MESSAGE value="vue mvvm  virtual dom diff" />
     <MESSAGE value="redis 击穿、雪崩、并发" />
     <MESSAGE value="bom dom" />
-    <option name="LAST_COMMIT_MESSAGE" value="bom dom" />
+    <MESSAGE value="浏览器和网络" />
+    <option name="LAST_COMMIT_MESSAGE" value="浏览器和网络" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/redis/skipList.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1742">
-          <caret line="67" column="38" lean-forward="false" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redis/sds.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
@@ -1227,14 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/concurrency.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/bom.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1318,10 +1215,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/redis/concurrency.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/cache.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="29" column="112" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="29" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2101">
-          <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+        <state relative-caret-position="26">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
