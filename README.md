@@ -87,12 +87,11 @@
 
 ### Redis
 
-* [redis的五种数据结构-使用](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
-* [expire与过期策略](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
-* 任务队列的两种实现方式
-* [aof & rdb](https://github.com/luyufa/NodeLearning/blob/master/redis/disk.md)
+* [五种数据结构](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
+* [生命周期与过期策略](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
+* [持久化策略](https://github.com/luyufa/NodeLearning/blob/master/redis/disk.md)
 * [缓存、击穿、雪崩、并发](https://github.com/luyufa/NodeLearning/blob/master/redis/concurrency.md)
-
+* 任务队列的两种实现方式
 
 
 
