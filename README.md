@@ -127,6 +127,7 @@
 * [任务队列的两种实现方式](https://github.com/luyufa/NodeLearning/blob/master/redis/queue.md)
 * [基于redis的缓存设计](https://github.com/luyufa/NodeLearning/blob/master/redis/cache.md)
 * [redis持久化策略](https://github.com/luyufa/NodeLearning/blob/master/redis/disk.md)
+* [击穿、雪崩、并发](https://github.com/luyufa/NodeLearning/blob/master/redis/concurrency.md)
 
 
 ### Linux基本操作及Shell编程入门

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/img/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/img/22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/img/33.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/img/44.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/virtualDom.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/concurrency.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/mvvm.md" afterPath="$PROJECT_DIR$/vue/mvvm.md" />
     </list>
     <ignored path="NodeSkil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +39,18 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="196" column="13" lean-forward="false" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="129" column="3" lean-forward="false" selection-start-line="129" selection-start-column="3" selection-end-line="129" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="concurrency.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis/concurrency.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -113,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/network/jsonp.md" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/a.js" />
         <option value="$PROJECT_DIR$/css/postion.md" />
@@ -163,6 +167,7 @@
         <option value="$PROJECT_DIR$/browser/repaint.md" />
         <option value="$PROJECT_DIR$/vue/mvvm.md" />
         <option value="$PROJECT_DIR$/vue/virtualDom.md" />
+        <option value="$PROJECT_DIR$/redis/concurrency.md" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -206,13 +211,7 @@
             <path>
               <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,11 +235,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\NodeLearning\redis" />
       <recent name="D:\workspace\NodeLearning\vue\img" />
       <recent name="D:\workspace\NodeLearning\vue" />
       <recent name="D:\workspace\NodeLearning\browser" />
       <recent name="D:\workspace\NodeLearning\node\img" />
-      <recent name="D:\workspace\NodeLearning\vue\src\mvvm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\NodeLearning\vue" />
@@ -467,14 +466,7 @@
       <workItem from="1551096445733" duration="2497000" />
       <workItem from="1551183909882" duration="97000" />
       <workItem from="1551269803853" duration="117000" />
-      <workItem from="1552462110482" duration="2112000" />
-    </task>
-    <task id="LOCAL-00083" summary="http cache">
-      <created>1523190656040</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1523190656040</updated>
+      <workItem from="1552462110482" duration="2475000" />
     </task>
     <task id="LOCAL-00084" summary="http cache">
       <created>1523190726095</created>
@@ -812,11 +804,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552463574910</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="vue mvvm  virtual dom diff">
+      <created>1552464239454</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1552464239454</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160734000" />
+    <option name="totallyTimeSpent" value="161097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -888,7 +887,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="float" />
     <MESSAGE value="webpack base config" />
     <MESSAGE value="webpack loader" />
     <MESSAGE value="webpack ensure" />
@@ -913,20 +911,14 @@
     <MESSAGE value="浏览器相关" />
     <MESSAGE value="url to render" />
     <MESSAGE value="重排和重绘" />
-    <option name="LAST_COMMIT_MESSAGE" value="重排和重绘" />
+    <MESSAGE value="vue mvvm  virtual dom diff" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue mvvm  virtual dom diff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wwwBuild/webpack.loader.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3073">
-          <caret line="162" column="3" lean-forward="false" selection-start-line="162" selection-start-column="3" selection-end-line="162" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwBuild/webpack.base.config.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3933">
@@ -1262,10 +1254,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/redis/concurrency.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="196" column="13" lean-forward="false" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="129" column="3" lean-forward="false" selection-start-line="129" selection-start-column="3" selection-end-line="129" selection-end-column="3" />
           <folding />
         </state>
       </provider>
