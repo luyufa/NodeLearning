@@ -72,23 +72,6 @@
 * 自定义异步asyncReduce
 
 
-
-
-### 网络
-
-* [http](https://github.com/luyufa/NodeLearning/blob/master/network/http.md)
-* [https详解](https://github.com/luyufa/NodeLearning/blob/master/network/https.md)
-* [dns解析](https://github.com/luyufa/NodeLearning/blob/master/network/dns.md)
-* [http cache](https://github.com/luyufa/NodeLearning/blob/master/network/http-cache.md)
-* [http method](https://github.com/luyufa/NodeLearning/blob/master/network/http-methods.md)
-* [RESTful API](https://github.com/luyufa/NodeLearning/blob/master/network/RESTful.md)
-* [同源策略及跨域请求](https://github.com/luyufa/NodeLearning/blob/master/network/cors.md)
-* [JSONP](https://github.com/luyufa/NodeLearning/blob/master/network/jsonp.md)
-* tcp/ip
-* cookie & session
-
-
-
 ### Test
 
 * [mimimist+assert+mocha+supertest](https://github.com/luyufa/NodeLearning/blob/master/test/test.md)
@@ -178,10 +161,13 @@
 * [vue-lazyload](https://github.com/luyufa/NodeLearning/blob/master/vue/lazyload.md)
 
 
-### 浏览器
+### 浏览器与网络
 
-* [DOM & BOM](https://github.com/luyufa/NodeLearning/blob/master/browser/dom_bom.md)
-* [输入URL到页面显示(网络为主)](https://github.com/luyufa/NodeLearning/blob/master/browser/urlToRender.md)
-* [浏览器渲染](https://github.com/luyufa/NodeLearning/blob/master/browser/render.md)
-* [前端性能监控](https://github.com/luyufa/NodeLearning/blob/master/browser/perfermance.md)
-* [浏览器重排重绘](https://github.com/luyufa/NodeLearning/blob/master/browser/repaint.md)
+* [DOM&BOM](https://github.com/luyufa/NodeLearning/blob/master/browser/dom_bom.md)
+* [输入URL后的网络活动](https://github.com/luyufa/NodeLearning/blob/master/browser/urlToRender.md)
+* [渲染](https://github.com/luyufa/NodeLearning/blob/master/browser/render.md)
+* [性能监控](https://github.com/luyufa/NodeLearning/blob/master/browser/perfermance.md)
+* [重排&重绘](https://github.com/luyufa/NodeLearning/blob/master/browser/repaint.md)
+* [同源&跨域](https://github.com/luyufa/NodeLearning/blob/master/browser/repaint.md)
+* [缓存](https://github.com/luyufa/NodeLearning/blob/master/browser/http-cache.md)
+* [https](https://github.com/luyufa/NodeLearning/blob/master/network/https.md)
