@@ -193,7 +193,8 @@
 
 ### Vue
 
-* [双向数据绑定mvvm](https://github.com/luyufa/NodeLearning/blob/master/vue/mvvm.md)
+* [vue双向数据绑定](https://github.com/luyufa/NodeLearning/blob/master/vue/mvvm.md)
+* [虚拟DOM及diff](https://github.com/luyufa/NodeLearning/blob/master/vue/virtualDom.md)
 * [nextTick](https://github.com/luyufa/NodeLearning/blob/master/vue/nextTick.md)
 * [vue-lazyload](https://github.com/luyufa/NodeLearning/blob/master/vue/lazyload.md)
 
