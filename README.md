@@ -91,6 +91,7 @@
 * [生命周期与过期策略](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
 * [持久化策略](https://github.com/luyufa/NodeLearning/blob/master/redis/disk.md)
 * [缓存、击穿、雪崩、并发](https://github.com/luyufa/NodeLearning/blob/master/redis/concurrency.md)
+* [分布式锁](https://github.com/luyufa/NodeLearning/blob/master/redis/lock.md)
 * 任务队列的两种实现方式
 
 
