@@ -88,11 +88,12 @@
 ### Redis
 
 * [五种数据结构](https://github.com/luyufa/NodeLearning/blob/master/redis/data_structure.md)
-* [生命周期与过期策略](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
-* [持久化策略](https://github.com/luyufa/NodeLearning/blob/master/redis/disk.md)
+* [生命周期与过期](https://github.com/luyufa/NodeLearning/blob/master/redis/expire.md)
+* [持久化](https://github.com/luyufa/NodeLearning/blob/master/redis/disk.md)
 * [缓存、击穿、雪崩、并发](https://github.com/luyufa/NodeLearning/blob/master/redis/concurrency.md)
 * [分布式锁](https://github.com/luyufa/NodeLearning/blob/master/redis/lock.md)
-* [任务队列](https://github.com/luyufa/NodeLearning/blob/master/redis/queue.md)
+* [消息队列](https://github.com/luyufa/NodeLearning/blob/master/redis/queue.md)
+* [常见场景](https://github.com/luyufa/NodeLearning/blob/master/redis/scene.md)
 
 
 
