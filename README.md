@@ -5,6 +5,7 @@
 * [libuv](https://github.com/luyufa/NodeLearning/blob/master/node/libuv.md)
 * [v8](https://github.com/luyufa/NodeLearning/blob/master/node/v8.md)
 * [module加载过程](https://github.com/luyufa/NodeLearning/blob/master/node/module.md)
+* [Node多进程cluster](https://github.com/luyufa/NodeLearning/blob/master/node/cluster.md)
 
 ###### 常见问题
 * a.js 和 b.js 两个文件互相 require 是否会死循环? 双方是否能导出变量?

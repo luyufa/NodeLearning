@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/scene.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/img/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/cluster.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -29,18 +30,18 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="95" column="43" lean-forward="false" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+            <state relative-caret-position="182">
+              <caret line="7" column="82" lean-forward="false" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scene.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/scene.md">
+      <file leaf-file-name="cluster.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/cluster.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="226" column="55" lean-forward="false" selection-start-line="226" selection-start-column="55" selection-end-line="226" selection-end-column="55" />
+            <state relative-caret-position="216">
+              <caret line="194" column="13" lean-forward="false" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -63,6 +64,7 @@
       <find>5.png</find>
       <find>https://luyufa.github.io/img/browser</find>
       <find>[</find>
+      <find>png</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -78,7 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/redis/skipList.md" />
         <option value="$PROJECT_DIR$/redis/zllist.md" />
         <option value="$PROJECT_DIR$/redis/single-redis-database.md" />
         <option value="$PROJECT_DIR$/node/express-koa.md" />
@@ -127,8 +128,9 @@
         <option value="$PROJECT_DIR$/redis/concurrency.md" />
         <option value="$PROJECT_DIR$/redis/lock.md" />
         <option value="$PROJECT_DIR$/redis/queue.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/redis/scene.md" />
+        <option value="$PROJECT_DIR$/node/cluster.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -159,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -171,12 +172,19 @@
             <path>
               <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="node" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,17 +202,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace\NodeLearning\vue" />
-      <recent name="D:\workspace\NodeLearning\other" />
-      <recent name="D:\workspace\NodeLearning\css\position" />
-      <recent name="D:\workspace\NodeLearning\node\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\NodeLearning\node\img" />
       <recent name="D:\workspace\NodeLearning\browser" />
       <recent name="D:\workspace\NodeLearning\redis" />
       <recent name="D:\workspace\NodeLearning\vue\img" />
       <recent name="D:\workspace\NodeLearning\vue" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\NodeLearning\vue" />
+      <recent name="D:\workspace\NodeLearning\other" />
+      <recent name="D:\workspace\NodeLearning\css\position" />
       <recent name="D:\workspace\NodeLearning\node\img" />
     </key>
   </component>
@@ -429,14 +437,9 @@
       <workItem from="1552462110482" duration="3360000" />
       <workItem from="1552466225596" duration="3192000" />
       <workItem from="1552908483437" duration="815000" />
-      <workItem from="1554781580895" duration="690000" />
-    </task>
-    <task id="LOCAL-00093" summary="angular 删除">
-      <created>1525936255250</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1525936255250</updated>
+      <workItem from="1554781580895" duration="719000" />
+      <workItem from="1554864375684" duration="642000" />
+      <workItem from="1555336399131" duration="152000" />
     </task>
     <task id="LOCAL-00094" summary="bfc">
       <created>1525939287739</created>
@@ -774,11 +777,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552908579472</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="redis scene">
+      <created>1554791016236</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1554791016236</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166679000" />
+    <option name="totallyTimeSpent" value="167502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -791,14 +801,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19863014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30120483" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.59009486" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3652174" sideWeight="0.6759747" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33558863" sideWeight="0.43551797" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.40990517" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3656148" sideWeight="0.32718652" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36452666" sideWeight="0.3240253" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -850,8 +861,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="webpack cache read me" />
-    <MESSAGE value="webpack hmr" />
     <MESSAGE value="webpack extractText" />
     <MESSAGE value="css percentage" />
     <MESSAGE value="css margin collapsing" />
@@ -875,27 +884,15 @@
     <MESSAGE value="redis整理" />
     <MESSAGE value="redis lock" />
     <MESSAGE value="redis queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis queue" />
+    <MESSAGE value="redis scene" />
+    <MESSAGE value="cluster" />
+    <option name="LAST_COMMIT_MESSAGE" value="cluster" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wwwBuild/webpack.extractText.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="56" column="99" lean-forward="false" selection-start-line="56" selection-start-column="99" selection-end-line="56" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/percentage.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="66" column="51" lean-forward="false" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/other/wwwSum.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1284">
@@ -946,13 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="325" column="40" lean-forward="false" selection-start-line="325" selection-start-column="40" selection-end-line="325" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/libuv.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="47" column="73" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -1190,22 +1180,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redis/scene.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
+        <state relative-caret-position="5876">
           <caret line="226" column="55" lean-forward="false" selection-start-line="226" selection-start-column="55" selection-end-line="226" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/framework.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/libuv.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/cluster.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="194" column="13" lean-forward="false" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="95" column="43" lean-forward="false" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+        <state relative-caret-position="182">
+          <caret line="7" column="82" lean-forward="false" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
           <folding />
         </state>
       </provider>
