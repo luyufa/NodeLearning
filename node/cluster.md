@@ -343,3 +343,13 @@ if (cluster.isMaster) {
   });
 }
 ```
+
+
+
+##### ps:参考
+
+* [egg多进程](https://eggjs.org/zh-cn/core/cluster-and-ipc.html#%E8%BF%9B%E7%A8%8B%E5%AE%88%E6%8A%A4)
+
+* [当我们谈论 cluster 时我们在谈论什么(上)](http://taobaofed.org/blog/2015/11/03/nodejs-cluster/)
+
+* [当我们谈论 cluster 时我们在谈论什么（下）](http://taobaofed.org/blog/2015/11/10/nodejs-cluster-2/)
