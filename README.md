@@ -89,6 +89,7 @@
 * [分布式锁](https://github.com/luyufa/NodeLearning/blob/master/redis/lock.md)
 * [消息队列](https://github.com/luyufa/NodeLearning/blob/master/redis/queue.md)
 * [常见场景](https://github.com/luyufa/NodeLearning/blob/master/redis/scene.md)
+* [删除大key](https://github.com/luyufa/NodeLearning/blob/master/redis/del.md)
 
 
 
