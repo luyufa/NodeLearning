@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f561844-bbde-46f3-b75d-a35fd3ed8d4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/img/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/cluster.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nginx/config.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -30,18 +29,18 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="82" lean-forward="false" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+            <state relative-caret-position="421">
+              <caret line="166" column="85" lean-forward="true" selection-start-line="166" selection-start-column="85" selection-end-line="166" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cluster.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/cluster.md">
+      <file leaf-file-name="config.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nginx/config.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="194" column="13" lean-forward="false" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
+            <state relative-caret-position="1643">
+              <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,7 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/redis/zllist.md" />
         <option value="$PROJECT_DIR$/redis/single-redis-database.md" />
         <option value="$PROJECT_DIR$/node/express-koa.md" />
         <option value="$PROJECT_DIR$/mysql/NF.md" />
@@ -130,6 +128,7 @@
         <option value="$PROJECT_DIR$/redis/queue.md" />
         <option value="$PROJECT_DIR$/redis/scene.md" />
         <option value="$PROJECT_DIR$/node/cluster.md" />
+        <option value="$PROJECT_DIR$/nginx/config.md" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -168,17 +167,6 @@
             <path>
               <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="node" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NodeLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NodeLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="node" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -439,21 +427,8 @@
       <workItem from="1552908483437" duration="815000" />
       <workItem from="1554781580895" duration="719000" />
       <workItem from="1554864375684" duration="642000" />
-      <workItem from="1555336399131" duration="152000" />
-    </task>
-    <task id="LOCAL-00094" summary="bfc">
-      <created>1525939287739</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1525939287739</updated>
-    </task>
-    <task id="LOCAL-00095" summary="bfc">
-      <created>1525939347929</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1525939347929</updated>
+      <workItem from="1555336399131" duration="333000" />
+      <workItem from="1561707824304" duration="308000" />
     </task>
     <task id="LOCAL-00096" summary="module">
       <created>1525953932886</created>
@@ -784,11 +759,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554791016236</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="cluster">
+      <created>1555336553570</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1555336553570</updated>
+    </task>
+    <task id="LOCAL-00144" summary="cluster">
+      <created>1555336722463</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1555336722463</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167502000" />
+    <option name="totallyTimeSpent" value="167991000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -801,15 +790,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19863014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30120483" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3652174" sideWeight="0.6759747" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36452666" sideWeight="0.6791359" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33558863" sideWeight="0.43551797" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.40990517" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23068553" sideWeight="0.37407798" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36452666" sideWeight="0.3240253" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36452666" sideWeight="0.32086408" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -861,7 +849,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="webpack extractText" />
     <MESSAGE value="css percentage" />
     <MESSAGE value="css margin collapsing" />
     <MESSAGE value="www sum" />
@@ -886,20 +873,14 @@
     <MESSAGE value="redis queue" />
     <MESSAGE value="redis scene" />
     <MESSAGE value="cluster" />
-    <option name="LAST_COMMIT_MESSAGE" value="cluster" />
+    <MESSAGE value="nginx config" />
+    <option name="LAST_COMMIT_MESSAGE" value="nginx config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/other/wwwSum.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1284">
-          <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node/v8.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-936">
@@ -1187,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5876">
           <caret line="226" column="55" lean-forward="false" selection-start-line="226" selection-start-column="55" selection-end-line="226" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1203,22 +1182,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node/cluster.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="194" column="13" lean-forward="false" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
+        <state relative-caret-position="468">
+          <caret line="350" column="98" lean-forward="true" selection-start-line="350" selection-start-column="98" selection-end-line="350" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/config.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1643">
+          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="82" lean-forward="false" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+        <state relative-caret-position="421">
+          <caret line="166" column="85" lean-forward="true" selection-start-line="166" selection-start-column="85" selection-end-line="166" selection-end-column="85" />
           <folding />
         </state>
       </provider>

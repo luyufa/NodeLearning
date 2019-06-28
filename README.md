@@ -73,12 +73,6 @@
 * 自定义异步asyncReduce
 
 
-### Test
-
-* [mimimist+assert+mocha+supertest](https://github.com/luyufa/NodeLearning/blob/master/test/test.md)
-
-
-
 ### Mysql
 * [关系型数据库范式](https://github.com/luyufa/NodeLearning/blob/master/mysql/NF.md)
 * [索引](https://github.com/luyufa/NodeLearning/blob/master/mysql/index.md)
@@ -171,3 +165,7 @@
 * [广度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeBFS.md)
 * [深度优先搜索(走迷宫最短路径)](https://github.com/luyufa/NodeLearning/blob/master/algorithm/mazeDFS.md)
 * [二叉树遍历](https://github.com/luyufa/NodeLearning/blob/master/algorithm/binaryTree.md)
+
+
+* [mimimist+assert+mocha+supertest](https://github.com/luyufa/NodeLearning/blob/master/test/test.md)
+* [nginx config](https://github.com/luyufa/NodeLearning/blob/master/nginx/config.md)
