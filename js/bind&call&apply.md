@@ -10,7 +10,7 @@
 
 * 特性
 
-  ```
+  ```js
   console.log(Function.prototype.bind)
   // [Function: bind]
 
@@ -26,7 +26,8 @@
 
   ```
 * 实现
-  ```
+
+  ```js
   Function.prototype._bind = function (ctx) {// 挂在Function原型上
       const self = this;//当前this即为调用函数
       return function () {
@@ -38,7 +39,8 @@
 2. 绑定时传入参数、调用时传入参数
 
 * 特性
-  ```
+
+  ```js
   绑定时和调用时传入参数
   const t = {o: 'person'};
   function say(name, age) {
@@ -54,7 +56,8 @@
   // age is 25
   ```
 * 实现
-  ```
+
+  ```js
   Function.prototype._bind = function (ctx) {
       const self = this;
       const bindArgs = Array.prototype.slice.call(arguments, 1);// 获取绑定时除了ctx之外的剩余参数
@@ -69,7 +72,8 @@
 3. 构造函数
 
 * 特性
-  ```
+
+  ```js
   const t = {o: 'person'};
   function say(name, age) {
     console.log(this.o);
@@ -91,7 +95,7 @@
   ```
 * 实现
 
-  ```
+  ```js
   Function.prototype._bind = function (ctx) {
     const self = this;
     const bindArgs = Array.prototype.slice.call(arguments, 1);
