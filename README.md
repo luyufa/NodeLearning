@@ -34,6 +34,7 @@
 ### JS
 
 * [call & apply & bind](https://github.com/luyufa/NodeLearning/blob/master/js/bind&call&apply.md)
+* [prototype & this](https://github.com/luyufa/NodeLearning/blob/master/js/prototype&this.md)
 * [ES6](https://github.com/luyufa/NodeLearning/blob/master/js/es6.md)
 * [闭包](https://github.com/luyufa/NodeLearning/blob/master/js/closure.md)
 * 原型 & 继承

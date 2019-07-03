@@ -234,6 +234,7 @@
     const NullFun = function () {
     };
     NullFun.prototype = this.prototype;
+    NullFun.prototype.constructor = NullFun;
 
     function FBound() {
         const args = Array.prototype.slice.call(arguments);
@@ -241,6 +242,7 @@
     }
 
     FBound.prototype = new NullFun();
+    FBound.prototype.constructor = FBound;
     return FBound
    };
 
