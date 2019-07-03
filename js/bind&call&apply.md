@@ -1,5 +1,117 @@
-## bind & apply & call
+## call & apply & bind
 > 修改this指向
+
+#### call
+> 立即调用一个修改了this指向的函数，可传入参数
+
+1. 立即调用一个修改了this指向的函数,函数所具有的公共方法
+
+* 特性
+
+  ```js
+  console.log(Function.prototype.call)
+  // [Function: bind]
+
+  const obj = {
+    name: 'lu'
+  };
+  function say() {
+    console.log(this.name);
+  }
+  say.call(obj); // lu  this指向obj，且函数被立即调用
+
+  ```
+
+* 实现
+
+  ```js
+  Function.prototype._call = function (ctx) {
+    ctx = ctx || global;
+    // ctx传入null时，默认this指向global
+
+    ctx.__fn = this;
+    // 把当前调用函数作为ctx的一个属性
+    const result = ctx.__fn();
+    // 这是调用的时候this自然指向ctx
+    delete ctx.__fn;
+    // 为防止ctx被修改，调用结束后删除
+    return result
+    // 函数是可以有返回值的
+  };
+  ```
+
+2. 调用时传入参数
+
+* 特性
+
+  ```js
+  function say(age, sex) {
+    console.log('this.name', this.name);
+    console.log('age', age);
+    console.log('sex', sex);
+  }
+  say.call(obj, 25); // 可传入不确定个数的参数
+
+  // this.name lu
+  // age 25
+  // sex undefined
+
+  ```
+
+* 实现
+
+  ```js
+  Function.prototype._call = function (ctx) {
+    ctx = ctx || global;
+
+    const args = [];
+    for (let i = 1; i < arguments.length; i++) {
+        args.push('arguments[' + i + ']');
+    }
+    // 先通过arguments获取调用时传入的除ctx之外的参数。
+
+    ctx.__fn = this;
+    const result = eval('ctx.__fn(' + args.join(',') + ')');
+     //使用eavl传入不确定个数的参数
+    delete ctx.__fn;
+
+    return result;
+  };
+  ```
+
+#### apply
+> 和call的作用一样，不过其接受数组作为传入参数
+
+  ```js
+   Function.prototype._apply = function (ctx, arr) {
+    ctx = ctx || global;
+    if (!Array.isArray(arr)) {
+        arr = [];
+    }
+
+    ctx.__fn = this;
+
+    const args = [];
+    for (let i = 0; i < arr.length; i++) {
+        args.push('arr[' + i + ']')
+    }
+
+    const results = eval('ctx.__fn(' + args.join(',') + ')');
+    delete ctx.__fn;
+    return results;
+  };
+  ```
+  `ES6实现版`
+  ```js
+  Function.prototype._applyEs6 = function (ctx, arr) {
+    const __fn = Symbol();
+    //构造一个唯一key，以防_fn和ctx原有key冲突
+    ctx[__fn] = this;
+    const results = ctx[__fn](...arr);//简化传入参数
+    delete ctx [__fn];
+    return results;
+}
+  ```
 
 
 #### bind
@@ -135,6 +247,3 @@
    FBound.prototype -> nullFun.__proto__ -> this.prototype  使用空函数中转
 
   ```
-
-
-
