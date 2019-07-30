@@ -38,7 +38,7 @@
 * [call & apply & bind模拟实现](https://github.com/luyufa/NodeLearning/blob/master/js/bind&call&apply.md)
 * [闭包](https://github.com/luyufa/NodeLearning/blob/master/js/closure.md)
 * [作用域](https://github.com/luyufa/NodeLearning/blob/master/js/scope.md)
-* [this]
+* [this](https://github.com/luyufa/NodeLearning/blob/master/js/this.md)
 * [new]
 * [类数组对象]
 * [类型判断]
