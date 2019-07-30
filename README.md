@@ -40,9 +40,6 @@
 * [作用域](https://github.com/luyufa/NodeLearning/blob/master/js/scope.md)
 * [this](https://github.com/luyufa/NodeLearning/blob/master/js/this.md)
 * [new](https://github.com/luyufa/NodeLearning/blob/master/js/new.md)
-* [类数组对象]
-* [类型判断]
-* [ES6](https://github.com/luyufa/NodeLearning/blob/master/js/es6.md)
 * [类型判断](https://github.com/luyufa/NodeLearning/blob/master/js/typeof.md)
 
 ###### 常见问题
