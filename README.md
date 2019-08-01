@@ -41,6 +41,7 @@
 * [this](https://github.com/luyufa/NodeLearning/blob/master/js/this.md)
 * [new](https://github.com/luyufa/NodeLearning/blob/master/js/new.md)
 * [类型判断](https://github.com/luyufa/NodeLearning/blob/master/js/typeof.md)
+* [防抖](https://github.com/luyufa/NodeLearning/blob/master/js/debounce.md)
 
 ###### 常见问题
 
