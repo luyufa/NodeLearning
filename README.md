@@ -43,6 +43,7 @@
 * [类型判断](https://github.com/luyufa/NodeLearning/blob/master/js/typeof.md)
 * [防抖](https://github.com/luyufa/NodeLearning/blob/master/js/debounce.md)
 * [节流](https://github.com/luyufa/NodeLearning/blob/master/js/throttle.md)
+* [去重](https://github.com/luyufa/NodeLearning/blob/master/js/unique.md)
 
 ###### 常见问题
 
