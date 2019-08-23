@@ -45,6 +45,7 @@
 * [节流](https://github.com/luyufa/NodeLearning/blob/master/js/throttle.md)
 * [拷贝](https://github.com/luyufa/NodeLearning/blob/master/js/copy.md)
 * [数组](https://github.com/luyufa/NodeLearning/blob/master/js/array.md)
+* [函数](https://github.com/luyufa/NodeLearning/blob/master/js/function.md)
 
 ###### 常见问题
 
