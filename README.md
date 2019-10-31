@@ -182,3 +182,4 @@
 * [mimimist+assert+mocha+supertest](https://github.com/luyufa/NodeLearning/blob/master/test/test.md)
 * [nginx config](https://github.com/luyufa/NodeLearning/blob/master/nginx/config.md)
 * [正则表达式](https://github.com/luyufa/NodeLearning/blob/master/other/regexp.md)
+* [docker](https://github.com/luyufa/NodeLearning/blob/master/other/docker.md)
