@@ -65,3 +65,38 @@ test.then(value=>console.log('value', value));
 //test Promise { <pending> }
 //value 1
 ```
+
+###### async await
+> generator+自动执行器
+
+在深入了解`async await` 之前，必须先知道什么是`generator`
+
+```
+let idx = 1;
+function * get() {
+    idx++;
+    yield idx;
+    idx++;
+    return idx;
+}
+const iterator = get();
+console.log(iterator.next());//{ value: 2, done: false}
+console.log(iterator.next());//{ value: 3, done: true}
+```
+`generator`返回一个迭代器需要手动调用`next`来使代码执行下去。这种方式代码不在从头至尾一次性执行完毕，而是遇到`yield`，暂停代码执行直到调用`next`。当所有的`yield`执行完，会返回一个标示。
+
+基于此我们可以写一个自动执行器来代替手动`next`即可。
+
+```
+function run(task) {
+    const {done, value}=task.next();
+    if (!done) {
+        return value.then(function () {
+            return run(task);
+        });
+    } else {
+        return value;
+    }
+}
+```
+其实`async`就是`Generator`的语法糖 等于`Generator+自动执行器`。
