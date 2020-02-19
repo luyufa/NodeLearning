@@ -248,35 +248,33 @@ doSomething().then(doSomethingElse)
 ###### promise并发控制
 
 ```
-const load = url => new Promise(r => setTimeout(() => r(url), 2000));
-function asyncLoad(tasks, onHandler, callback, limit = tasks.length) {
-    limit = tasks.length < limit ? tasks.length : limit;
-    const queue = tasks.splice(0, limit);
-    let count = 0;
+function concurrency(urls, limit) {
+    return new Promise(resolve=> {
+        limit = urls.length < limit ? urls.length : limit;
+        let finish = 0;
+        const results = [];
 
-    function _next() {
-        if (tasks.length) {
-            const task = tasks.shift();
-            load(task).then(url => {
-                onHandler(url);
-                _next();
-            })
-        } else {
-            if (++count === limit) {
-                callback()
-            }
-            return false
+        function _load(url) {
+            return new Promise(r=>setTimeout(()=>r(url), 2000 + Math.random() * 2000));
         }
-    }
 
-    for (let i = 0; queue.length; i++) {
-        load(queue.shift()).then(url => {
-            onHandler(url);
-            _next()
-        })
-    }
+        function _next() {
+            const url = urls.shift();
+            if (url) {
+                _load(url).then(res=> {
+                    results.push(res);
+                    _next();
+                })
+            } else if (++finish === limit) {
+                return resolve(results);
+            }
+        }
+
+        for (let i = 0; i < limit; i++) {
+            _next();
+        }
+    })
 }
-
 ```
 
 
